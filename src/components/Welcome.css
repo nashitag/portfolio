@@ -1,0 +1,15 @@
+.background {
+    background-image: url('../assets/design1.png');
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: bottom;
+}
+
+.welcome-text-main {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+  
