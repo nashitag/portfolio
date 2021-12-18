@@ -3,70 +3,49 @@ import './Welcome.css';
 import TiltTile from './TiltTile.js';
 import Sketch from 'react-p5';
 import texture2 from '../assets/design1.png';
-import ScrollAnimation from 'react-animate-on-scroll';
-import { fadeIn } from 'react-animations'
-import styled, { keyframes } from 'styled-components';
+import { goToAnchor } from 'react-scrollable-anchor'
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor';
-const fadeInAnimation = keyframes`${fadeIn}`;
-const FadeInDiv = styled.div`
-  animation: 3s ${fadeInAnimation};
-`;
+import Fade from 'react-reveal/Fade';
+import Jump from 'react-reveal/Jump';
+import arrowDown from '../assets/arrowDown.png';
+import Pulse from 'react-reveal/Pulse';
+import { useState } from 'react';
+import Navbarr from './NavBarr';
 
-const styles = {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    minHeight: '10vh',
-  }
-
-  configureAnchors({offset: -100})
+  // configureAnchors({offset: -100})
 
 function Welcome() {
-    const options = {
-        max: 15,
-        perspective: 1000,
-        scale: 1.15,
-        }
 
+  const [counter, setCounter] = useState(0)
 
-    
-        
-
-    
-
+  function goToProjects() {
+    console.log("test")
+    goToAnchor('projects')
+  }
   return (
-    <div >
-        {/* <Sketch setup={setup} draw={draw} /> */}
-        {/* <TiltTile
-            options={options}
-          >
-            <img src={texture2} alt="" style={{height:'100%', width:'100%'}}/>
-            
-          </TiltTile> */}
-            {/* <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center'}}>
-                <FadeInDiv style={{height:'100%', display:'flex', justifyContent:'center', alignItems:'center', alignSelf: 'center',}}>Hi, I'm Nash </FadeInDiv>
-            </div> */}
-            <ScrollableAnchor id={'home'}>
-              <div className='background' >
-                <div className="welcome-text-main">
-                    <FadeInDiv style={{height:'100%', display:'flex', justifyContent:'center', alignItems:'center', alignSelf: 'center',}}>Hi, I'm Nash </FadeInDiv>
+    <div className='background' >
+      <Navbarr/>
+              <ScrollableAnchor id={'home'}>
+                <div className="bck1">
+                  <div className="welcome-text-main">
+                    <Fade bottom><h2 className="heading">Hey there, I'm Nash</h2></Fade>
+                  </div>
+                  <div onClick={()=>goToProjects()}>
+                    <Jump duration={2000} forever={true}>
+                      <img src={arrowDown} className="arrowDown"></img>
+                    </Jump>
+                    <p href='#projects' className="small-caption">Scroll down to see my projects</p>
+                  </div>
                 </div>
-              </div>
-            </ScrollableAnchor>
-            <ScrollableAnchor id={'home2'}>
-              <div >
-                  <FadeInDiv style={{height:'100%', display:'flex', justifyContent:'center', alignItems:'center', alignSelf: 'center',}}>Second scroll</FadeInDiv>
-              </div>
-            </ScrollableAnchor>
-          {/* <ScrollAnimation animateIn="fadeIn">
-            Some Text
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeIn">
-            Some Text
-          </ScrollAnimation> */}
-          
+              </ScrollableAnchor>
+              <ScrollableAnchor id={'projects'}>
+                <div className="bck1">
+                  <div className="welcome-text-main"> 
+                      <h1>HI HI</h1>
+                  </div>
+                </div>
+              </ScrollableAnchor>
     </div>
   );
 }
