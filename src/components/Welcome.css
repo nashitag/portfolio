@@ -9,8 +9,17 @@
 }
 @media only screen and (max-width: 768px){
 
-    .background {
+    .bck1 {
         background-image: url('../assets/bck_mobile.png');
+        background-size: 100% 100vh;
+        background-attachment: initial;
+    }
+    .bck2 {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-image: url('../assets/bck_mobile_sg.png');
         background-size: 100% 100vh;
         background-attachment: initial;
     }

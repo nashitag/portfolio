@@ -40,7 +40,7 @@ function Welcome() {
                 </div>
               </ScrollableAnchor>
               <ScrollableAnchor id={'projects'}>
-                <div className="bck1">
+                <div className="bck2">
                   <div className="welcome-text-main"> 
                       <h1>HI HI</h1>
                   </div>
