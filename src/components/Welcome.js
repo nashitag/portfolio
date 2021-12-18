@@ -31,7 +31,7 @@ function Welcome() {
                   <div className="welcome-text-main">
                     <Fade bottom><h2 className="heading">Hey there, I'm Nash</h2></Fade>
                   </div>
-                  <div onClick={()=>goToProjects()}>
+                  <div onClick={()=>goToProjects()} className="goDown">
                     <Jump duration={2000} forever={true}>
                       <img src={arrowDown} className="arrowDown"></img>
                     </Jump>
