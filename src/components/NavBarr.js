@@ -10,7 +10,7 @@ function Navbarr() {
     return (
         <Navbar variant="light" bg="transparent" expand="md" >
         <Container>
-            <Navbar.Brand href="#home" class="font-weight-light">My Portfolio</Navbar.Brand>
+            <Navbar.Brand href="#home" class="font-weight-light">Nashita Abd</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
