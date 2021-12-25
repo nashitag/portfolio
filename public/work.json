@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "name": "BIG BROTHER",
+        "tag_line": "Facial Verification Security System",
+        "tag_img": "/work_images/work1_1.png",
+        "summary": "",
+        "details": [
+            {
+                "id":"div_1",
+                "div_type": "text", 
+                "div_title": "Problem Statement",
+                "div_items": "Security systems of verification should establish a secure access control system by reducing both impersonations at work/school events and increasing administrative efficiency and speed."
+            },
+            {
+                "id":"div_2",
+                "div_type": "text", 
+                "div_title": "Features of our System",
+                "div_items": "1. Interactive mobile application to be used by organiser : Intuitive and easy to use 2. Facial recognition : Fast & accurate, Mobile devices already have camera, User Interface to display verification 3. Multi-factor authentication : Higher security Our solution comes in three parts, a registration app, facial recognition model and backend app for administrators. Firstly, the registration app records the registrant’s details (an image and ID) by taking a picture of registrant as well as recording down their ID. The image will be uploaded to the Publit.io platform via their API and the URL created will be sent over to firebase. This information is then sent over to Firebase and then analysed on the Python backend, with the Facenet model. After a result is obtained, the result is sent back to the registration app so that the user knows he is completed with the process. Lastly, we have another native Android application for administrators at the event. This app tracks the attendance of all registrants that are already present. This application also allows the administrator to do a manual confirmation of the registrant’s identify should the algorithm fail."
+            },
+            {
+                "id":"div_3",
+                "div_type": "image/jpg", 
+                "div_title": "ADD NEW USER APP",
+                "div_items": "./data/work_images/work.json"
+            }
+        ],
+        "tags": []
+    },
+    {
+        "id": 2,
+        "name": "BIG BROTHER",
+        "tag_line": "Facial Verification Security System",
+        "tag_img": "/work_images/work1_1.png",
+        "summary": "",
+        "details": [
+            {
+                "id":"div_1",
+                "div_type": "text", 
+                "div_title": "Problem Statement",
+                "div_items": "Security systems of verification should establish a secure access control system by reducing both impersonations at work/school events and increasing administrative efficiency and speed."
+            },
+            {
+                "id":"div_2",
+                "div_type": "text", 
+                "div_title": "Features of our System",
+                "div_items": "1. Interactive mobile application to be used by organiser : Intuitive and easy to use 2. Facial recognition : Fast & accurate, Mobile devices already have camera, User Interface to display verification 3. Multi-factor authentication : Higher security Our solution comes in three parts, a registration app, facial recognition model and backend app for administrators. Firstly, the registration app records the registrant’s details (an image and ID) by taking a picture of registrant as well as recording down their ID. The image will be uploaded to the Publit.io platform via their API and the URL created will be sent over to firebase. This information is then sent over to Firebase and then analysed on the Python backend, with the Facenet model. After a result is obtained, the result is sent back to the registration app so that the user knows he is completed with the process. Lastly, we have another native Android application for administrators at the event. This app tracks the attendance of all registrants that are already present. This application also allows the administrator to do a manual confirmation of the registrant’s identify should the algorithm fail."
+            },
+            {
+                "id":"div_3",
+                "div_type": "image/jpg", 
+                "div_title": "ADD NEW USER APP",
+                "div_items": "./data/work_images/work.json"
+            }
+        ],
+        "tags": []
+    },
+    {
+        "id": 3,
+        "name": "BIG BROTHER",
+        "tag_line": "Facial Verification Security System",
+        "tag_img": "/work_images/work1_1.png",
+        "summary": "",
+        "details": [
+            {
+                "id":"div_1",
+                "div_type": "text", 
+                "div_title": "Problem Statement",
+                "div_items": "Security systems of verification should establish a secure access control system by reducing both impersonations at work/school events and increasing administrative efficiency and speed."
+            },
+            {
+                "id":"div_2",
+                "div_type": "text", 
+                "div_title": "Features of our System",
+                "div_items": "1. Interactive mobile application to be used by organiser : Intuitive and easy to use 2. Facial recognition : Fast & accurate, Mobile devices already have camera, User Interface to display verification 3. Multi-factor authentication : Higher security Our solution comes in three parts, a registration app, facial recognition model and backend app for administrators. Firstly, the registration app records the registrant’s details (an image and ID) by taking a picture of registrant as well as recording down their ID. The image will be uploaded to the Publit.io platform via their API and the URL created will be sent over to firebase. This information is then sent over to Firebase and then analysed on the Python backend, with the Facenet model. After a result is obtained, the result is sent back to the registration app so that the user knows he is completed with the process. Lastly, we have another native Android application for administrators at the event. This app tracks the attendance of all registrants that are already present. This application also allows the administrator to do a manual confirmation of the registrant’s identify should the algorithm fail."
+            },
+            {
+                "id":"div_3",
+                "div_type": "image/jpg", 
+                "div_title": "ADD NEW USER APP",
+                "div_items": "./data/work_images/work.json"
+            }
+        ],
+        "tags": []
+    },
+    {
+        "id": 4,
+        "name": "BIG BROTHER",
+        "tag_line": "Facial Verification Security System",
+        "tag_img": "/work_images/work1_1.png",
+        "summary": "",
+        "details": [
+            {
+                "id":"div_1",
+                "div_type": "text", 
+                "div_title": "Problem Statement",
+                "div_items": "Security systems of verification should establish a secure access control system by reducing both impersonations at work/school events and increasing administrative efficiency and speed."
+            },
+            {
+                "id":"div_2",
+                "div_type": "text", 
+                "div_title": "Features of our System",
+                "div_items": "1. Interactive mobile application to be used by organiser : Intuitive and easy to use 2. Facial recognition : Fast & accurate, Mobile devices already have camera, User Interface to display verification 3. Multi-factor authentication : Higher security Our solution comes in three parts, a registration app, facial recognition model and backend app for administrators. Firstly, the registration app records the registrant’s details (an image and ID) by taking a picture of registrant as well as recording down their ID. The image will be uploaded to the Publit.io platform via their API and the URL created will be sent over to firebase. This information is then sent over to Firebase and then analysed on the Python backend, with the Facenet model. After a result is obtained, the result is sent back to the registration app so that the user knows he is completed with the process. Lastly, we have another native Android application for administrators at the event. This app tracks the attendance of all registrants that are already present. This application also allows the administrator to do a manual confirmation of the registrant’s identify should the algorithm fail."
+            },
+            {
+                "id":"div_3",
+                "div_type": "image/jpg", 
+                "div_title": "ADD NEW USER APP",
+                "div_items": "./data/work_images/work.json"
+            }
+        ],
+        "tags": []
+    },
+    {
+        "id": 5,
+        "name": "BIG BROTHER",
+        "tag_line": "Facial Verification Security System",
+        "tag_img": "/work_images/work1_1.png",
+        "summary": "",
+        "details": [
+            {
+                "id":"div_1",
+                "div_type": "text", 
+                "div_title": "Problem Statement",
+                "div_items": "Security systems of verification should establish a secure access control system by reducing both impersonations at work/school events and increasing administrative efficiency and speed."
+            },
+            {
+                "id":"div_2",
+                "div_type": "text", 
+                "div_title": "Features of our System",
+                "div_items": "1. Interactive mobile application to be used by organiser : Intuitive and easy to use 2. Facial recognition : Fast & accurate, Mobile devices already have camera, User Interface to display verification 3. Multi-factor authentication : Higher security Our solution comes in three parts, a registration app, facial recognition model and backend app for administrators. Firstly, the registration app records the registrant’s details (an image and ID) by taking a picture of registrant as well as recording down their ID. The image will be uploaded to the Publit.io platform via their API and the URL created will be sent over to firebase. This information is then sent over to Firebase and then analysed on the Python backend, with the Facenet model. After a result is obtained, the result is sent back to the registration app so that the user knows he is completed with the process. Lastly, we have another native Android application for administrators at the event. This app tracks the attendance of all registrants that are already present. This application also allows the administrator to do a manual confirmation of the registrant’s identify should the algorithm fail."
+            },
+            {
+                "id":"div_3",
+                "div_type": "image/jpg", 
+                "div_title": "ADD NEW USER APP",
+                "div_items": "./data/work_images/work.json"
+            }
+        ],
+        "tags": []
+    }
+]

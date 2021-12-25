@@ -1,5 +1,5 @@
 .background {
-    background-image: url('../assets/design1.png');
+    background-image: url('../assets/design1_1.png');
     background-size: cover; 
     background-repeat: no-repeat;
     /* height: 100vh; */
@@ -45,7 +45,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 0
     /* background-color: red; */
 }
@@ -110,4 +110,31 @@
 .collapse:not(.show) {
     display: none;
     top: 0.25rem;
+}
+
+
+.div_about_me {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin: 4vw;
+    padding: 4vw;
+}
+.div_about_text {
+    /* padding: 2vw; */
+    padding-right: 4vw;
+    text-align: left;
+}
+.about_text_title {
+    font-family: 'Marleigh';
+    font-size: 5vh;
+}
+.about_text_para {
+    font-family: "Helvetica";
+    font-weight: 300;
+}
+.about_image {
+    height: 30vh;
+    width: 30vh
 }
