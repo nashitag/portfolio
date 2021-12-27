@@ -17,7 +17,7 @@
 .workContainerCOL.col {
     padding:0px;
     display:flex;
-    flex-grow:0
+    flex-grow:0;
 }
 .projectContainer {
     position: relative;
@@ -25,8 +25,11 @@
     width:252px;
     border: 1px solid grey;
     margin: 1px;
+    
 }
 .projectImage{
+    position: relative;
+    z-index: 1;
     height:250px;
     width:250px;
     object-fit:cover;
@@ -46,8 +49,10 @@
 .projectContainer:hover .projectCaption{
     visibility: visible;
     opacity: 1;
+    z-index: 9;
 }
 .projectContainer:hover .projectImage{
     filter: brightness(0.3);
     transform: scale(1.2);
+    z-index: 9;
 }

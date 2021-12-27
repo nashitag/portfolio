@@ -1,4 +1,5 @@
 import './Welcome.css';
+import './Work.css';
 import Navbarr from './NavBarr';
 import React,{useState,useEffect}  from "react";
 import { useLocation, Link } from "react-router-dom";
@@ -20,21 +21,21 @@ function WorkDetail() {
            }
         })
         .then(function(response){
-            console.log("FETCHING WORK DETAIL JSON: ", response)
+            console.log("FETCHING WORK DETAIL RESPONSE: ", response)
             return response.json();
           })
           .then(function(myJson) {
             const filteredData = myJson.filter(data => data.id === state.id) 
-            setWorkDetailJSON(filteredData)
-            console.log(filteredData);
+            setWorkDetailJSON(filteredData[0])
+            console.log("FETCHING WORK DETAIL JSON: ", filteredData);
           });
       }
 
     return (
         <div className='background' >
           <Navbarr/>
-          <div>
-              HI HI {state.id}
+          <div className="workContainer">
+              {workDetailJSON.name}
           </div>
         </div>
     )
