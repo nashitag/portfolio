@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "skills": "Android Development",
+        "type": "Technical"
+    },
+    {
+        "id": 2,
+        "skills": "Product Development",
+        "type": "Strategy"
+    },
+    {
+        "id": 3,
+        "skills": "Solution Design and Architecture",
+        "type": "Strategy"
+    },
+    {
+        "id": 4,
+        "skills": "React",
+        "type": "Technical"
+    },
+    {
+        "id": 5,
+        "skills": "React Native",
+        "type": "Technical"
+    },
+    {
+        "id": 6,
+        "skills": "Swift",
+        "type": "Language"
+    },
+    {
+        "id": 7,
+        "skills": "iOS App Development",
+        "type": "Technical"
+    },
+    {
+        "id": 8,
+        "skills": "Python",
+        "type": "Language"
+    },
+    {
+        "id": 9,
+        "skills": "Java",
+        "type": "Language"
+    },
+    {
+        "id": 10,
+        "skills": "JavaScript",
+        "type": "Language"
+    },
+    {
+        "id": 11,
+        "skills": "Flask",
+        "type": "Technical"
+    },
+    {
+        "id": 12,
+        "skills": "Firebase",
+        "type": "Technical"
+    },
+    {
+        "id": 13,
+        "skills": "Machine Learning",
+        "type": "Technical"
+    }
+]

@@ -25,11 +25,11 @@
                 "div_items": "/work_images/work1_1.png"
             }
         ],
-        "tags": []
+        "tags": [1, 2, 13, 4, 5, 6, 9]
     },
     {
         "id": 2,
-        "name": "BIG BROTHER",
+        "name": "Octowill",
         "tag_line": "Facial Verification Security System",
         "tag_img": "/work_images/work1_1.png",
         "summary": "",

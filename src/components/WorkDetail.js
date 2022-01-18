@@ -11,10 +11,36 @@ function WorkDetail() {
 
     const [workDetailJSON, setWorkDetailJSON]=useState([]);
     const [details, setDetails]=useState([]);
+    const [skills, setSkills]=useState([]);
+    
 
     useEffect(()=>{
         getWorkDetailJSON()
+        
       },[])
+
+    
+    const getSkills=(tags)=>{
+      fetch('/skills.json',{
+        headers : { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+         }
+      })
+      .then(function(response){
+          console.log("FETCHING SKILLS DETAIL RESPONSE: ", response)
+          return response.json();
+        })
+        .then(function(myJson) {
+          const filteredData = []
+          tags.forEach(element => {
+            filteredData.push((myJson.filter(data => data.id===element))[0]) 
+          })
+          setSkills(filteredData)
+          console.log("FETCHING SKILLS JSON: ", filteredData);
+          
+        });
+    }
 
     const getWorkDetailJSON=()=>{
         fetch('/work.json',{
@@ -31,7 +57,9 @@ function WorkDetail() {
             const filteredData = myJson.filter(data => data.id === state.id) 
             setWorkDetailJSON(filteredData[0])
             setDetails(filteredData[0].details)
+            getSkills(filteredData[0].tags)
             console.log("FETCHING WORK DETAIL JSON: ", filteredData);
+          
           });
       }
 
@@ -59,6 +87,13 @@ function WorkDetail() {
                 <p className="heading">{workDetailJSON.name}</p>
                 <p className="caption1">{workDetailJSON.tag_line}</p>
                 <p className="summary">{workDetailJSON.summary}</p>
+              </div>
+              <div className="skillsContainer">
+                {skills.map((skill) => (
+                  <div className="skill_body">
+                    <p className="skill_text">{skill.skills}</p>
+                  </div>
+                ))}
               </div>
               <XMasonry maxColumns={2} responsive={true} updateOnFontLoad={true} targetBlockWidth={600}>
                 {details.map((detail) => (
