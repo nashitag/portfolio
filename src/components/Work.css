@@ -6,9 +6,19 @@
     background-position: bottom;
     background-attachment: fixed;
 }
-.workContainer {
-    margin: 10vh;
+.backgroundWorkDetail {
+    background-image: url('../assets/texture5.jpg');
+    background-size: cover; 
+    /* background-repeat: no-repeat; */
     height: 100vh;
+    overflow-y: scroll;
+    /* background-position: bottom; */
+    /* background-attachment: fixed; */
+}
+.workContainer {
+    margin: 8vh;
+    /* height: 100vh; */
+    
     /* width: 50px; */
 }
 .workContainerROW.row {
@@ -55,4 +65,41 @@
     filter: brightness(0.3);
     transform: scale(1.2);
     z-index: 9;
+}
+.heading {
+    font-family: 'Marleigh';
+    font-size: 10vh;
+}
+.caption1 {
+    font-family: "Helvetica";
+    font-weight: 900;
+    font-size: 3vh;
+}
+.summary {
+    font-family: "Helvetica";
+    font-weight: 300;
+    font-size: 2.5vh;
+    font-style: italic;
+}
+.body {
+    display: flex;
+    flex-wrap: wrap;
+}
+.div_body {
+    margin: 7px;
+    padding: 5px;
+}
+.div_title {
+    font-family: "Helvetica";
+    font-weight: 900;
+    font-size: 4vh;
+}
+.div_text {
+    font-family: "Helvetica";
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: justify;
+}
+.div_image {
+    width:400px;
 }

@@ -4,7 +4,7 @@
         "name": "BIG BROTHER",
         "tag_line": "Facial Verification Security System",
         "tag_img": "/work_images/work1_1.png",
-        "summary": "",
+        "summary": "Security systems of verification should establish a secure access control system by reducing both impersonations at work/school events and increasing administrative efficiency and speed.",
         "details": [
             {
                 "id":"div_1",
@@ -22,7 +22,7 @@
                 "id":"div_3",
                 "div_type": "image/jpg", 
                 "div_title": "ADD NEW USER APP",
-                "div_items": "./data/work_images/work.json"
+                "div_items": "/work_images/work1_1.png"
             }
         ],
         "tags": []
@@ -116,7 +116,7 @@
         "name": "BIG BROTHER",
         "tag_line": "Facial Verification Security System",
         "tag_img": "/work_images/work1_1.png",
-        "summary": "",
+        "summary": "Security systems of verification should establish a secure access control system by reducing both impersonations at work/school events and increasing administrative efficiency and speed.",
         "details": [
             {
                 "id":"div_1",
