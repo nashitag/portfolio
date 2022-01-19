@@ -1,5 +1,6 @@
 import './Welcome.css';
 import './Work.css';
+import backarrow from '../assets/back-arrow.png';
 import Navbarr from './NavBarr';
 import React,{useState,useEffect}  from "react";
 import { useLocation, Link } from "react-router-dom";
@@ -80,6 +81,15 @@ function WorkDetail() {
                   <p className="div_title_img">{divDetails.div_title}</p>
 
                 </>
+                  : null }  
+              {divDetails.div_type=="hyperlink" ? 
+                <>
+                  <a href={divDetails.div_link} target="_blank" rel="noreferrer noopener">
+                    <img src={divDetails.div_symbol} className="div_link_symbol" ></img>
+                  </a>
+                  <p className="div_title_img">{divDetails.div_title}</p>
+
+                </>
                   : null }    
             </div>
         );
@@ -88,12 +98,19 @@ function WorkDetail() {
     return (
         <div className='backgroundWorkDetail'>
           <Navbarr/>
-          <div className="workContainer">
-              <div>
-                <p className="date">{workDetailJSON.date}</p>
-                <p className="heading">{workDetailJSON.name}</p>
-                <p className="caption1">{workDetailJSON.tag_line}</p>
-                <p className="summary">{workDetailJSON.summary}</p>
+          
+          <div className="workContainerDetail">
+            <div style={{display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
+              <Link to={'/work'}>
+                <img src={backarrow} className="backarrow" ></img>
+              </Link>
+                <div>
+                  <p className="date">{workDetailJSON.date}</p>
+                  <p className="heading">{workDetailJSON.name}</p>
+                  <p className="caption1">{workDetailJSON.tag_line}</p>
+                  <p className="summary">{workDetailJSON.summary}</p>
+                </div>
+                <div style={{width:'50px'}}></div>
               </div>
               <div className="skillsContainer">
                 {skills.map((skill) => (

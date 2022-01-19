@@ -5,6 +5,7 @@
         "date": "OCT-DEC 2018",
         "tag_line": "Facial Verification Security System",
         "tag_img": "/work_images/work1_1.png",
+        "tags": [1, 2, 13, 4, 5, 6, 9],
         "summary": "Security systems of verification should establish a secure access control system by reducing both impersonations at work/school events and increasing administrative efficiency and speed.",
         "details": [
             {
@@ -67,119 +68,67 @@
                 "div_title": "",
                 "div_items": "The Administrator App has the following functionalities:\n 1. A home page that gives an insight into the event that is taking place \n 2. 'Registered’ page, that provides a ListView of individuals that have been verified, along with the ID and type(Student, Staff, Alumni) \n 3. Manually Registered List that provides a list of individuals that have been registered by the organizer himself \n 4. ‘Blacklist’ page, that provides a ListView of individuals that have been rejected by the organizer due to impersonation(imposter) \n 5. Provides a platform that displays a list of individuals that have been rejected by the Facial Verification Model. Further, displays the Name, ID, and Photograph of individual to be manually verified for the organizer \n 6. Provides an overview of number of Students, Staff and Alumni present at the event"
             }
-        ],
-        "tags": [1, 2, 13, 4, 5, 6, 9]
+        ]
     },
     {
         "id": 2,
         "name": "Octowill",
-        "tag_line": "Facial Verification Security System",
-        "tag_img": "/work_images/work1_1.png",
-        "summary": "",
+        "date": "DEC-JAN 2020-21",
+        "tag_line": "React Native App for Inheritance Solutions on Blockchain",
+        "tag_img": "/work_images/work2_1.png",
+        "tags": [1, 2, 13, 4, 5, 6, 9],
+        "summary": "A React Native Application in iOS and Android for Digital e-Nomination to write and secure your will on blockchain.",
         "details": [
             {
                 "id":"div_1",
                 "div_type": "text", 
-                "div_title": "Problem Statement",
-                "div_items": "Security systems of verification should establish a secure access control system by reducing both impersonations at work/school events and increasing administrative efficiency and speed."
+                "div_title": "What is Octowill",
+                "div_items": "Designed and built a React Native Application in iOS and Android for Digital e-Nomination. Worked on effective App packaging and Deployment."
             },
             {
                 "id":"div_2",
-                "div_type": "text", 
-                "div_title": "Features of our System",
-                "div_items": "1. Interactive mobile application to be used by organiser : Intuitive and easy to use 2. Facial recognition : Fast & accurate, Mobile devices already have camera, User Interface to display verification 3. Multi-factor authentication : Higher security Our solution comes in three parts, a registration app, facial recognition model and backend app for administrators. Firstly, the registration app records the registrant’s details (an image and ID) by taking a picture of registrant as well as recording down their ID. The image will be uploaded to the Publit.io platform via their API and the URL created will be sent over to firebase. This information is then sent over to Firebase and then analysed on the Python backend, with the Facenet model. After a result is obtained, the result is sent back to the registration app so that the user knows he is completed with the process. Lastly, we have another native Android application for administrators at the event. This app tracks the attendance of all registrants that are already present. This application also allows the administrator to do a manual confirmation of the registrant’s identify should the algorithm fail."
+                "div_type": "hyperlink", 
+                "div_title": "Checkout Octowill on the App Store",
+                "div_symbol": "/work_images/work2__1.png",
+                "div_link": "https://apps.apple.com/my/app/octowill-enomination-wills/id1547761485"
             },
             {
                 "id":"div_3",
+                "div_type": "hyperlink", 
+                "div_title": "Checkout Octowill on the Play Store",
+                "div_symbol": "/work_images/work2__2.png",
+                "div_link": "https://play.google.com/store/apps/details?id=com.octowill_v1"
+            },
+            {
+                "id":"div_4",
                 "div_type": "image/jpg", 
-                "div_title": "ADD NEW USER APP",
-                "div_items": "./data/work_images/work.json"
-            }
-        ],
-        "tags": []
-    },
-    {
-        "id": 3,
-        "name": "BIG BROTHER",
-        "tag_line": "Facial Verification Security System",
-        "tag_img": "/work_images/work1_1.png",
-        "summary": "",
-        "details": [
-            {
-                "id":"div_1",
-                "div_type": "text", 
-                "div_title": "Problem Statement",
-                "div_items": "Security systems of verification should establish a secure access control system by reducing both impersonations at work/school events and increasing administrative efficiency and speed."
+                "div_title": "Screenshots from Octowill",
+                "div_items": "/work_images/work2_2.png"
             },
             {
-                "id":"div_2",
+                "id":"div_5",
                 "div_type": "text", 
-                "div_title": "Features of our System",
-                "div_items": "1. Interactive mobile application to be used by organiser : Intuitive and easy to use 2. Facial recognition : Fast & accurate, Mobile devices already have camera, User Interface to display verification 3. Multi-factor authentication : Higher security Our solution comes in three parts, a registration app, facial recognition model and backend app for administrators. Firstly, the registration app records the registrant’s details (an image and ID) by taking a picture of registrant as well as recording down their ID. The image will be uploaded to the Publit.io platform via their API and the URL created will be sent over to firebase. This information is then sent over to Firebase and then analysed on the Python backend, with the Facenet model. After a result is obtained, the result is sent back to the registration app so that the user knows he is completed with the process. Lastly, we have another native Android application for administrators at the event. This app tracks the attendance of all registrants that are already present. This application also allows the administrator to do a manual confirmation of the registrant’s identify should the algorithm fail."
+                "div_title": "Features in the App",
+                "div_items": "1. Interactive Dashboard Page \n 2. High quality and quick Image Upload/Download \n 3. User Signature Integration \n 4. Payment Gateway along with Voucher/Coupon code \n 5. Login/Registration"
             },
             {
-                "id":"div_3",
+                "id":"div_6",
                 "div_type": "image/jpg", 
-                "div_title": "ADD NEW USER APP",
-                "div_items": "./data/work_images/work.json"
-            }
-        ],
-        "tags": []
-    },
-    {
-        "id": 4,
-        "name": "BIG BROTHER",
-        "tag_line": "Facial Verification Security System",
-        "tag_img": "/work_images/work1_1.png",
-        "summary": "",
-        "details": [
-            {
-                "id":"div_1",
-                "div_type": "text", 
-                "div_title": "Problem Statement",
-                "div_items": "Security systems of verification should establish a secure access control system by reducing both impersonations at work/school events and increasing administrative efficiency and speed."
+                "div_title": "Screenshots from Octowill",
+                "div_items": "/work_images/work2_3.png"
             },
             {
-                "id":"div_2",
+                "id":"div_7",
                 "div_type": "text", 
-                "div_title": "Features of our System",
-                "div_items": "1. Interactive mobile application to be used by organiser : Intuitive and easy to use 2. Facial recognition : Fast & accurate, Mobile devices already have camera, User Interface to display verification 3. Multi-factor authentication : Higher security Our solution comes in three parts, a registration app, facial recognition model and backend app for administrators. Firstly, the registration app records the registrant’s details (an image and ID) by taking a picture of registrant as well as recording down their ID. The image will be uploaded to the Publit.io platform via their API and the URL created will be sent over to firebase. This information is then sent over to Firebase and then analysed on the Python backend, with the Facenet model. After a result is obtained, the result is sent back to the registration app so that the user knows he is completed with the process. Lastly, we have another native Android application for administrators at the event. This app tracks the attendance of all registrants that are already present. This application also allows the administrator to do a manual confirmation of the registrant’s identify should the algorithm fail."
+                "div_title": "Features in the App",
+                "div_items": "6. Fast Loading Time and High Performance \n 7. An Intuitive UX And Clear Privacy Options \n 8. Scalable Text "
             },
             {
-                "id":"div_3",
+                "id":"div_8",
                 "div_type": "image/jpg", 
-                "div_title": "ADD NEW USER APP",
-                "div_items": "./data/work_images/work.json"
+                "div_title": "Screenshots from Octowill",
+                "div_items": "/work_images/work2_4.png"
             }
-        ],
-        "tags": []
-    },
-    {
-        "id": 5,
-        "name": "BIG BROTHER",
-        "tag_line": "Facial Verification Security System",
-        "tag_img": "/work_images/work1_1.png",
-        "summary": "Security systems of verification should establish a secure access control system by reducing both impersonations at work/school events and increasing administrative efficiency and speed.",
-        "details": [
-            {
-                "id":"div_1",
-                "div_type": "text", 
-                "div_title": "Problem Statement",
-                "div_items": "Security systems of verification should establish a secure access control system by reducing both impersonations at work/school events and increasing administrative efficiency and speed."
-            },
-            {
-                "id":"div_2",
-                "div_type": "text", 
-                "div_title": "Features of our System",
-                "div_items": "1. Interactive mobile application to be used by organiser : Intuitive and easy to use 2. Facial recognition : Fast & accurate, Mobile devices already have camera, User Interface to display verification 3. Multi-factor authentication : Higher security Our solution comes in three parts, a registration app, facial recognition model and backend app for administrators. Firstly, the registration app records the registrant’s details (an image and ID) by taking a picture of registrant as well as recording down their ID. The image will be uploaded to the Publit.io platform via their API and the URL created will be sent over to firebase. This information is then sent over to Firebase and then analysed on the Python backend, with the Facenet model. After a result is obtained, the result is sent back to the registration app so that the user knows he is completed with the process. Lastly, we have another native Android application for administrators at the event. This app tracks the attendance of all registrants that are already present. This application also allows the administrator to do a manual confirmation of the registrant’s identify should the algorithm fail."
-            },
-            {
-                "id":"div_3",
-                "div_type": "image/jpg", 
-                "div_title": "ADD NEW USER APP",
-                "div_items": "./data/work_images/work.json"
-            }
-        ],
-        "tags": []
+        ]
     }
 ]

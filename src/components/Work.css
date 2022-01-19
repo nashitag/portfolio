@@ -21,6 +21,16 @@
     
     /* width: 50px; */
 }
+.workContainerDetail{
+    margin-left: 8vh;
+    margin-right: 8vh;
+    margin-top: 4vh;
+    height: 100vh;
+}
+.backarrow{
+    width:50px;
+    align-self: left;
+}
 .workContainerROW.row {
     justify-content:center
 }
@@ -33,7 +43,7 @@
     position: relative;
     height:252px;
     width:252px;
-    border: 1px solid grey;
+    border: 1px solid rgb(155, 154, 154);
     margin: 1px;
     
 }
@@ -117,6 +127,9 @@
 }
 .div_image {
     width:-webkit-fill-available;
+}
+.div_link_symbol{
+    width: 150px
 }
 .skillsContainer{
     display: flex;
