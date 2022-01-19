@@ -69,6 +69,13 @@
 .heading {
     font-family: 'Marleigh';
     font-size: 10vh;
+    margin-top: 0px;
+}
+.date {
+    font-family: "Helvetica";
+    margin-bottom: 0px;
+    font-size: 2vh;
+    font-weight: 300;
 }
 .caption1 {
     font-family: "Helvetica";
@@ -89,19 +96,27 @@
     margin: 7px;
     padding: 5px;
 }
-.div_title {
-    font-family: "Helvetica";
-    font-weight: 900;
+.div_title_text {
+    font-family: "Marleigh";
+    /* font-weight: 900; */
     font-size: 4vh;
+}
+.div_title_img {
+    font-family: "Helvetica";
+    font-weight: 100;
+    font-size: 2vh;
+    font-style: italic;
+    margin-bottom: 0px;
 }
 .div_text {
     font-family: "Helvetica";
     font-weight: 400;
     font-size: 1rem;
     text-align: justify;
+    white-space: pre-line
 }
 .div_image {
-    width:400px;
+    width:-webkit-fill-available;
 }
 .skillsContainer{
     display: flex;
@@ -118,6 +133,7 @@
     border: 2px solid #333333;
     border-radius: 10% 8% 10% 10% / 12% 4% 10% 10%;
     text-align: center;
+    cursor: pointer;
 }
 .skill_text{
     font-family: "Helvetica";

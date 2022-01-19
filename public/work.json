@@ -2,6 +2,7 @@
     {
         "id": 1,
         "name": "BIG BROTHER",
+        "date": "OCT-DEC 2018",
         "tag_line": "Facial Verification Security System",
         "tag_img": "/work_images/work1_1.png",
         "summary": "Security systems of verification should establish a secure access control system by reducing both impersonations at work/school events and increasing administrative efficiency and speed.",
@@ -16,13 +17,55 @@
                 "id":"div_2",
                 "div_type": "text", 
                 "div_title": "Features of our System",
-                "div_items": "1. Interactive mobile application to be used by organiser : Intuitive and easy to use 2. Facial recognition : Fast & accurate, Mobile devices already have camera, User Interface to display verification 3. Multi-factor authentication : Higher security Our solution comes in three parts, a registration app, facial recognition model and backend app for administrators. Firstly, the registration app records the registrant’s details (an image and ID) by taking a picture of registrant as well as recording down their ID. The image will be uploaded to the Publit.io platform via their API and the URL created will be sent over to firebase. This information is then sent over to Firebase and then analysed on the Python backend, with the Facenet model. After a result is obtained, the result is sent back to the registration app so that the user knows he is completed with the process. Lastly, we have another native Android application for administrators at the event. This app tracks the attendance of all registrants that are already present. This application also allows the administrator to do a manual confirmation of the registrant’s identify should the algorithm fail."
+                "div_items": "1. Interactive mobile application to be used by organiser : Intuitive and easy to use \n 2. Facial recognition : Fast & accurate, Mobile devices already have camera, User Interface to display verification \n 3. Multi-factor authentication : Higher security \n Our solution comes in three parts, a registration app, facial recognition model and backend app for administrators. Firstly, the registration app records the registrant’s details (an image and ID) by taking a picture of registrant as well as recording down their ID. The image will be uploaded to the Publit.io platform via their API and the URL created will be sent over to firebase. \n This information is then sent over to Firebase and then analysed on the Python backend, with the Facenet model. After a result is obtained, the result is sent back to the registration app so that the user knows he is completed with the process. Lastly, we have another native Android application for administrators at the event. This app tracks the attendance of all registrants that are already present. This application also allows the administrator to do a manual confirmation of the registrant’s identify should the algorithm fail."
             },
             {
                 "id":"div_3",
                 "div_type": "image/jpg", 
-                "div_title": "ADD NEW USER APP",
+                "div_title": "Add-New-User App",
                 "div_items": "/work_images/work1_1.png"
+            },
+            {
+                "id":"div_4",
+                "div_type": "text", 
+                "div_title": "Add-New-User App",
+                "div_items": "The application retrieves the data of the new user and posts them to a firebase database where we will later use the data as part of the training set for the python face recognition model. The application also implemented code that would prompt the user to allow specific permissions if they are not pre-approved. \n The application uses the Action_image_capture to take a picture via the phone camera and that image is processed into an image url via the Publito API afterwards. This url is then posted to firebase as well to be used as a reference photo. \n On successful registration of a new user, the user is shown a page indicating that they have successfully registered."
+            },
+            {
+                "id":"div_5",
+                "div_type": "image/jpg", 
+                "div_title": "Registration App",
+                "div_items": "/work_images/work1_2.png"
+            },
+            {
+                "id":"div_6",
+                "div_type": "text", 
+                "div_title": "Registration App",
+                "div_items": "The application retrieves the data of the registrant and posts them to a firebase database where we will use the data in the python face recognition model. The model then returns us a signal if the registration is successful or not, where by the user will be brought to a successfully registered or failed to register page. (shown below) The code makes use of firebase’s onChildAdded event listener to alert the camera activity such that the correct activity (success or failure) is prompted after the data is sent to firebase. \n The application also implemented code that would prompt the user to allow specific permissions if they are not pre-approved. \n The application uses the Action_image_capture to take a picture via the phone camera and that image is processed into an image url via the Publito API afterwards. This url is then posted to firebase as well to be used as a verification photo. The model will check if the person in the photo is the same one in the reference photo."
+            },
+            {
+                "id":"div_7",
+                "div_type": "image/jpg", 
+                "div_title": "Administrator App",
+                "div_items": "/work_images/work1_3.png"
+            },
+            {
+                "id":"div_8",
+                "div_type": "text", 
+                "div_title": "Administrator App",
+                "div_items": "The administrator’s App aims to give an overview of the Event for which registrations are currently taking place. Organizers can keep track of every individual that has been registered, or has been rejected. Furthermore, the organizer can Manually Verify a registrant in the case where his/her face has been rejected by the facial verification model. Hence, enabling a multi layer verification system"
+            },
+            {
+                "id":"div_7",
+                "div_type": "image/jpg", 
+                "div_title": "",
+                "div_items": "/work_images/work1_4.png"
+            },
+            {
+                "id":"div_8",
+                "div_type": "text", 
+                "div_title": "",
+                "div_items": "The Administrator App has the following functionalities:\n 1. A home page that gives an insight into the event that is taking place \n 2. 'Registered’ page, that provides a ListView of individuals that have been verified, along with the ID and type(Student, Staff, Alumni) \n 3. Manually Registered List that provides a list of individuals that have been registered by the organizer himself \n 4. ‘Blacklist’ page, that provides a ListView of individuals that have been rejected by the organizer due to impersonation(imposter) \n 5. Provides a platform that displays a list of individuals that have been rejected by the Facial Verification Model. Further, displays the Name, ID, and Photograph of individual to be manually verified for the organizer \n 6. Provides an overview of number of Students, Staff and Alumni present at the event"
             }
         ],
         "tags": [1, 2, 13, 4, 5, 6, 9]

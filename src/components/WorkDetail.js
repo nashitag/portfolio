@@ -68,12 +68,18 @@ function WorkDetail() {
 
         return (
             <div className="div_body" >
-              <p className="div_title">{divDetails.div_title}</p>
               {divDetails.div_type=="text" ? 
+                <>
+                  <p className="div_title_text">{divDetails.div_title}</p>
                   <p className="div_text">{divDetails.div_items}</p>
+                </>
                   : null }
               {divDetails.div_type=="image/jpg" ? 
+                <>
                   <img src={divDetails.div_items} className="div_image" ></img>
+                  <p className="div_title_img">{divDetails.div_title}</p>
+
+                </>
                   : null }    
             </div>
         );
@@ -84,6 +90,7 @@ function WorkDetail() {
           <Navbarr/>
           <div className="workContainer">
               <div>
+                <p className="date">{workDetailJSON.date}</p>
                 <p className="heading">{workDetailJSON.name}</p>
                 <p className="caption1">{workDetailJSON.tag_line}</p>
                 <p className="summary">{workDetailJSON.summary}</p>
