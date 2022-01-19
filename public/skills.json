@@ -1,67 +1,67 @@
 [
     {
-        "id": 1,
-        "skills": "Android Development",
+        "value": 1,
+        "label": "Android Development",
         "type": "Technical"
     },
     {
-        "id": 2,
-        "skills": "Product Development",
+        "value": 2,
+        "label": "Product Development",
         "type": "Strategy"
     },
     {
-        "id": 3,
-        "skills": "Solution Design and Architecture",
+        "value": 3,
+        "label": "Solution Design and Architecture",
         "type": "Strategy"
     },
     {
-        "id": 4,
-        "skills": "React",
+        "value": 4,
+        "label": "React",
         "type": "Technical"
     },
     {
-        "id": 5,
-        "skills": "React Native",
+        "value": 5,
+        "label": "React Native",
         "type": "Technical"
     },
     {
-        "id": 6,
-        "skills": "Swift",
+        "value": 6,
+        "label": "Swift",
         "type": "Language"
     },
     {
-        "id": 7,
-        "skills": "iOS App Development",
+        "value": 7,
+        "label": "iOS App Development",
         "type": "Technical"
     },
     {
-        "id": 8,
-        "skills": "Python",
+        "value": 8,
+        "label": "Python",
         "type": "Language"
     },
     {
-        "id": 9,
-        "skills": "Java",
+        "value": 9,
+        "label": "Java",
         "type": "Language"
     },
     {
-        "id": 10,
-        "skills": "JavaScript",
+        "value": 10,
+        "label": "JavaScript",
         "type": "Language"
     },
     {
-        "id": 11,
-        "skills": "Flask",
+        "value": 11,
+        "label": "Flask",
         "type": "Technical"
     },
     {
-        "id": 12,
-        "skills": "Firebase",
+        "value": 12,
+        "label": "Firebase",
         "type": "Technical"
     },
     {
-        "id": 13,
-        "skills": "Machine Learning",
+        "value": 13,
+        "label": "Machine Learning",
         "type": "Technical"
     }
 ]

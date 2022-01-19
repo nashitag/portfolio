@@ -35,7 +35,7 @@ function WorkDetail() {
         .then(function(myJson) {
           const filteredData = []
           tags.forEach(element => {
-            filteredData.push((myJson.filter(data => data.id===element))[0]) 
+            filteredData.push((myJson.filter(data => data.value===element))[0]) 
           })
           setSkills(filteredData)
           console.log("FETCHING SKILLS JSON: ", filteredData);
@@ -115,7 +115,7 @@ function WorkDetail() {
               <div className="skillsContainer">
                 {skills.map((skill) => (
                   <div className="skill_body">
-                    <p className="skill_text">{skill.skills}</p>
+                    <p className="skill_text">{skill.label}</p>
                   </div>
                 ))}
               </div>
