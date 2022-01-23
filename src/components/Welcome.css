@@ -7,27 +7,6 @@
     background-position: bottom;
     background-attachment: fixed;
 }
-@media only screen and (max-width: 768px){
-
-    .bck1 {
-        background-image: url('../assets/bck_mobile.png');
-        background-size: 100% 100vh;
-        background-attachment: initial;
-    }
-    .bck2 {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        background-image: url('../assets/bck_mobile_sg.png');
-        background-size: 100% 100vh;
-        background-attachment: initial;
-    }
-
-    .goDown {
-        margin-bottom: 15vh;
-    }
- }
 
 .welcome-text-main {
     justify-content: center;
@@ -53,14 +32,12 @@
     /* font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue";  */
     font-family: 'Marleigh';
     /* font-weight: 300; */
-    font-size: 12vh;
-
+    font-size: 6rem;
 }
 .heading_caption1 {
     font-family: "Helvetica";
     font-weight: 300;
     font-size: 3vh;
-
 }
 .heading_caption2 {
     font-family: "Helvetica";
@@ -116,8 +93,8 @@
 .div_about_me {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-around;
+    align-items: flex-start;
+    justify-content: flex-start;
     margin: 4vw;
     padding: 4vw;
 }
@@ -138,3 +115,53 @@
     height: 30vh;
     width: 30vh
 }
+
+@media only screen and (max-width: 500px){
+
+
+    .bck1 {
+        background-image: url('../assets/texture5.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: bottom;
+        /* margin:5vw */
+    }
+    
+    
+    .bck2 {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /* background-image: url('../assets/bck_mobile_sg.png'); */
+        background-size: 100% 100vh;
+        background-position: bottom;
+        background-attachment: initial;
+    }
+
+    .goDown {
+        margin-bottom: 15vh;
+    }
+
+    .welcome-text-main {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10vh;
+    }
+    .div_about_me {
+        flex-direction: column-reverse;
+        display: flex;
+        margin: 8vw;
+        padding: 8vw;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .about_image {
+        height: 15vh;
+        width: 15vh;
+        margin: 3vh;
+    }
+    
+ }

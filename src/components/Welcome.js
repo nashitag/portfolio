@@ -10,12 +10,14 @@ import Rotate from 'react-reveal/Rotate';
 import { useState } from 'react';
 import Navbarr from './NavBarr';
 import { SocialIcon } from 'react-social-icons';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
   // configureAnchors({offset: -100})
 
 function Welcome() {
 
   const [counter, setCounter] = useState(0)
+  const matches = useMediaQuery('(min-width:600px)');
 
   function goToProjects() {
     console.log("test")
@@ -27,15 +29,15 @@ function Welcome() {
               <ScrollableAnchor id={'home'}>
                 <div className="bck1">
                   <div className="social_icons">
-                        <svg viewBox="0 0 50 100" >
+                        <svg viewBox={matches?"0 0 50 100":"0 0 50 60"} >
 
                           <path d="M22,100 v-80" stroke="#242424" stroke-width="1" >
                           </path>
                         </svg>
                       <Rotate bottom left delay={2000} >
-                        <SocialIcon url="https://sg.linkedin.com/in/nashitag" bgColor="#0000" fgColor="#242424" style={{height:'6vh', widht:'6vh'}}/>
-                        <SocialIcon url="https://github.com/nashitag" bgColor="#0000" fgColor="#242424" style={{height:'6vh', widht:'6vh'}}/>
-                        <SocialIcon url="nashitag@gmail.com" bgColor="#0000" fgColor="#242424"  network="mailto" style={{height:'6vh', widht:'6vh'}}/>
+                        <SocialIcon url="https://sg.linkedin.com/in/nashitag" bgColor="#0000" fgColor="#242424" style={{height:matches?'6vh':'5vh'}}/>
+                        <SocialIcon url="https://github.com/nashitag" bgColor="#0000" fgColor="#242424" style={{height:matches?'6vh':'5vh'}}/>
+                        <SocialIcon url="nashitag@gmail.com" bgColor="#0000" fgColor="#242424"  network="mailto" style={{height:matches?'6vh':'5vh'}}/>
                       </Rotate>
                     </div>
                   <div className="welcome-text-main">
@@ -61,7 +63,7 @@ function Welcome() {
               </ScrollableAnchor>
 
               <ScrollableAnchor id={'learnmore'}>
-                <div className="bck2">
+                <div className="bck1">
                   <div className="div_about_me">
                     <div className="div_about_text">
                       <h2 className="about_text_title">Hey there, I am Nashita.</h2>
@@ -73,9 +75,9 @@ function Welcome() {
                   </div>
 
                   <div className="div_my_work">
-                    <h2 className="about_text_title">My Work</h2>
+                    {/* <h2 className="about_text_title">My Work</h2> */}
 
-                    </div>
+                  </div>
                 </div>
               </ScrollableAnchor>
     </div>

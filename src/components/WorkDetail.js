@@ -6,6 +6,7 @@ import React,{useState,useEffect}  from "react";
 import { useLocation, Link } from "react-router-dom";
 import {Container, Row, Col} from 'react-bootstrap';
 import { XMasonry, XBlock } from "react-xmasonry";
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 function WorkDetail() {
     const { state } = useLocation();
@@ -14,6 +15,7 @@ function WorkDetail() {
     const [details, setDetails]=useState([]);
     const [skills, setSkills]=useState([]);
     
+    const matches = useMediaQuery('(min-width:600px)');
 
     useEffect(()=>{
         getWorkDetailJSON()
@@ -100,8 +102,8 @@ function WorkDetail() {
           <Navbarr/>
           
           <div className="workContainerDetail">
-            <div style={{display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
-              <Link to={'/work'}>
+            <div style={{display:'flex', flexDirection:matches?'row':"column", justifyContent:'space-between'}}>
+              <Link to={'/work'} style={{alignSelf: 'flex-start'}}>
                 <img src={backarrow} className="backarrow" ></img>
               </Link>
                 <div>

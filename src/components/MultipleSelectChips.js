@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-
+import useMediaQuery from '@mui/material/useMediaQuery';
 import {
   makeStyles,
   FormLabel,
@@ -9,13 +9,14 @@ import {
   FormHelperText,
 } from "@material-ui/core";
 
+
 const useStyles = makeStyles((theme) => ({
   container: {
     margin: ".5rem 0 .5rem",
     textAlign: "center",
   },
   chipsDiv: {
-    marginTop: ".3rem",
+    marginTop: "0.3rem",
   },
   chip: {
     // padding: '2px 10px',
@@ -25,12 +26,25 @@ const useStyles = makeStyles((theme) => ({
     border: "2px solid #333333",
     borderRadius: "10% 8% 10% 10% / 12% 4% 10% 10%",
     textAlign: "center",
-    cursor: "pointer"
+    cursor: "pointer",
+    [theme.breakpoints.down('sm')]: {
+      border: "1px solid #333333",
+      paddingTop: '0px',
+      height:'25px'
+    },
+    '& .MuiChip-label':{
+      paddingLeft:'4px',
+      paddingRight:'4px'
+    }
   },
   chipText: {
     fontFamily: "Helvetica",
     fontWeight: 400,
-    padding:'0px'
+    padding:'0px',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '10px',
+      padding:'0px'
+    },
   },
   formHelperText: {
     textAlign: "center",
@@ -54,10 +68,10 @@ const MultipleSelectChips = ({
 
   useEffect(()=>{
     setSelectedTags(options.filter((option) => value.indexOf(option.value) !== -1)
-              .map((option) => option.label)
-              .join(", "))
-    change(selectedTags)
-  })
+              .map((option) => option.value).join(", "))
+    change(options.filter((option) => value.indexOf(option.value) !== -1)
+    .map((option) => parseInt(option.value)))
+  }, [value])
 
   const handleClick = (clickedValue) => {
     if (setError) {
@@ -76,13 +90,13 @@ const MultipleSelectChips = ({
   return (
     <>
       <div className={classes.container}>
-        {label && (
+        {/* {label && (
           <FormLabel error={Boolean(error)}>
             <Typography variant="body2">{`${label}${
               value.length ? ":" : ""
             } ${selectedTags}`}</Typography>
           </FormLabel>
-        )}
+        )} */}
         {Boolean(error) && (
           <FormHelperText
             className={classes.formHelperText}

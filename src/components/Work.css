@@ -5,6 +5,7 @@
     width: 100wh;
     background-position: bottom;
     background-attachment: fixed;
+    overflow-y: scroll;
 }
 .backgroundWorkDetail {
     background-image: url('../assets/texture5.jpg');
@@ -156,4 +157,67 @@
 .skill_body:hover {
     box-shadow:2px 8px 8px -7px hsla(0,0%,0%,.3);
     border: 3px solid #333333;
+}
+
+@media only screen and (max-width: 500px){
+    .background {
+        background-image: url('../assets/texture5.jpg');
+        background-size: cover; 
+        background-repeat: no-repeat;
+        height: 100%;
+        background-position: bottom;
+        background-attachment: fixed;
+    }
+    .workContainer {
+        margin: 5vh;   
+    }
+    .backarrow{
+        width:30px;
+        align-self: left;
+    }
+    .heading {
+        font-family: 'Marleigh';
+        font-size: 7vh;
+        margin-top: 10px;
+        line-height: 7vh
+    }
+    .workContainerDetail{
+        margin-left: 5vh;
+        margin-right: 5vh;
+        margin-top: 3vh;
+        height: 100vh;
+    }
+    .caption1 {
+        font-size: 2vh;
+    }
+    .summary {
+        font-size: 2vh;
+    }
+    .skillsContainer{
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        flex-flow: wrap;
+    }
+    .skill_body{
+        padding: 1px 5px;
+        margin: 5px;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #333333;
+        border-radius: 10% 8% 10% 10% / 12% 4% 10% 10%;
+        text-align: center;
+        cursor: pointer;
+    }
+    .skill_text{
+        font-family: "Helvetica";
+        font-weight: 400;
+        margin: 0px;
+        font-size: small;
+    }
+    .div_title_text {
+        font-family: "Marleigh";
+        /* font-weight: 900; */
+        font-size: 4vh;
+        line-height: 4vh
+    }
 }

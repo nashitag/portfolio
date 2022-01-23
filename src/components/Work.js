@@ -6,7 +6,6 @@ import './Work.css';
 import {Container, Row, Col} from 'react-bootstrap';
 import MultipleSelectChips from './MultipleSelectChips';
 
-
 function Work() {
     const [workJSON,setWorkJSON]=useState([]);
     const [skills, setSkills]=useState([]);
@@ -16,7 +15,7 @@ function Work() {
 	  const [error, setError] = useState("")
 	  const options = skills
 
-    
+    const [unmutableWorkJSON,setUnmutableWorkJSON]=useState([]);
 
     useEffect(()=>{
         getWorkJSON()
@@ -37,6 +36,7 @@ function Work() {
           .then(function(myJson) {
             // console.log(myJson);
             setWorkJSON(myJson)
+            setUnmutableWorkJSON(myJson)
           });
       }
     const getSkillsLIST=()=>{
@@ -57,15 +57,52 @@ function Work() {
     }
 
     function selectedTagsChange(tags){
-      // console.log(tags)
+      console.log(tags)
       setSelectedTags(tags)
+      handleWorkListChange(tags)
     }
+
+    const [IDsFiltered, setIDsBeingFiltered] = useState([])
+    function handleWorkListChange(tags){
+      if(tags.length==0){
+        console.log("NO TAGS SELECTED")
+        getWorkJSON()
+        // setBeingFiltered([])
+      }
+      else{
+        console.log("TAGS SELECTED")
+        const filteredWORKData = []
+        tags.forEach(element => {
+          const work = unmutableWorkJSON.filter(data => data.tags.includes(element))
+          console.log(element, work)
+
+          //check for duplicates in array
+          if(idExists(work[0].id, filteredWORKData)==false){
+            filteredWORKData.push(work[0])
+          }
+          else{
+            console.log("ID is already in Array")
+          }
+        })
+        // console.log("filteredWORKData", filteredWORKData)
+        setWorkJSON(filteredWORKData)
+      }
+    }
+
+    function idExists(id, arr) {
+      return arr.some(function(el) {
+        return el.id === id;
+      }); 
+    }
+     
+    
+
 
     return (
         <div className='background' >
           <Navbarr/>
-          
           <div className="workContainer">
+            
             {/* <div className="skillsContainer">
                   {skills.map((skill) => (
                     <div className="skill_body" onClick={() => filterChange(skill.id)}>
@@ -82,11 +119,11 @@ function Work() {
               setError={setError}
               change={selectedTagsChange}
             />
-            <p>{selectedTags}</p>
+            {/* <p>{selectedTags}</p> */}
             <Container >
                 <Row className="workContainerROW" >
                 {workJSON.map((project) => (
-                    <Col className="workContainerCOL" >
+                    <Col key={project.id} className="workContainerCOL" >
                         <div className="projectContainer">
                             <Link
                                 to={{
@@ -113,6 +150,7 @@ function Work() {
 export default Work;
 
 class Helpers {
+
   static contains(orig, filter) {
     let res = filter.map(item => {
       return orig.includes(item);

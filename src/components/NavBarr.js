@@ -4,18 +4,24 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './Welcome.css';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 function Navbarr() {
 
+    const matches = useMediaQuery('(min-width:600px)');
+
     return (
         <Navbar variant="light" bg="transparent" expand="md" sticky="top">
-        <Container>
-            <Navbar.Brand href="/" className="font-weight-light">Nashita Abd</Navbar.Brand>
+        <Container >
+            
+            <Navbar.Brand style={{marginLeft:matches?0:'8vw'}} href="/" className="font-weight-light">Nashita Abd</Navbar.Brand>
+
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
                 <Nav.Link href="/work">Work</Nav.Link>
-                <Nav.Link href="/skills">Skills and Certifications</Nav.Link>
+                <Nav.Link href="/education">Education & Certifications</Nav.Link>
+                {/* <Nav.Link href="/experience">Experiec</Nav.Link> */}
                 <Nav.Link href="/awards">Awards</Nav.Link>
                 {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
