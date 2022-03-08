@@ -101,15 +101,7 @@ function Work() {
     return (
         <div className='background' >
           <Navbarr/>
-          <div className="workContainer">
-            
-            {/* <div className="skillsContainer">
-                  {skills.map((skill) => (
-                    <div className="skill_body" onClick={() => filterChange(skill.id)}>
-                      <p className="skill_text">{skill.label}</p>
-                    </div>
-                  ))}
-            </div> */}
+          <div className="workContainer">           
             <MultipleSelectChips
               label="Label"
               value={value}
@@ -134,13 +126,16 @@ function Work() {
                             >
                                 {/* HI {project.name} */}
                                 <img src={project.tag_img} className="projectImage" ></img>
-                                <p className="projectCaption">{project.name}</p>
+                                <div className="projectCaption">
+                                  <p className="projectCaption-date">{project.date}</p>
+                                  <h2 className="projectCaption-title">{project.name}</h2>
+                                  <p className="projectCaption-tagline">{project.tag_line}</p>
+                                </div>
                             </Link>
                         </div>
                     </Col>
                 ))}
                 </Row>
-                
             </Container>
           </div>
         </div>

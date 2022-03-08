@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './fonts/Marleigh.ttf';
+import * as tfjs from '@tensorflow/tfjs';
 
 ReactDOM.render(
   <React.StrictMode>

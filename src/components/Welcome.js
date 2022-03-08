@@ -6,11 +6,14 @@ import { configureAnchors } from 'react-scrollable-anchor';
 import Fade from 'react-reveal/Fade';
 import Jump from 'react-reveal/Jump';
 import arrowDown from '../assets/arrowDown.png';
+import sign from '../assets/sign.jpg';
 import Rotate from 'react-reveal/Rotate';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navbarr from './NavBarr';
 import { SocialIcon } from 'react-social-icons';
 import useMediaQuery from '@mui/material/useMediaQuery';
+// import * as mobilenet from '@tensorflow-models/mobilenet';
+// import * as tfjs from '@tensorflow/tfjs';
 
   // configureAnchors({offset: -100})
 
@@ -19,8 +22,25 @@ function Welcome() {
   const [counter, setCounter] = useState(0)
   const matches = useMediaQuery('(min-width:600px)');
 
-  function goToProjects() {
+
+
+  async function goToProjects() {
     console.log("test")
+
+    
+    const img =  document.querySelector('#sign')
+    console.log(img)
+
+    // const jsonUpload = document.getElementById('json-upload');
+    // const weightsUpload = document.getElementById('weights-upload');
+
+    // const modeWeight = await require('../assets/group1-shard.bin');
+    // const modeWeightFile = new File('../assets/group1-shard.bin');
+
+    // const model = await tfjs.loadLayersModel(tfjs.io.browserFiles([jsonUpload.files[0], weightsUpload.files[0]]));
+    // const predictions = await model.classify(img);
+    // console.log('Predictions: ', predictions);
+
     goToAnchor('learnmore')
   }
   return (
@@ -46,13 +66,15 @@ function Welcome() {
                       <h1 className="heading1">Nashita Abd</h1>
                       <h1 className="heading_caption2">Dubai | Singapore</h1>
                     </Fade>
+                    {/* <input type="file" id='json-upload' name='json-upload'></input>
+                    <input type="file" id='weights-upload' name='weights-upload'></input> */}
                   </div>
                   <div className="welcome_div_bottom">
                     <div style={{width: 50}}>
                     </div>
                     <div onClick={()=>goToProjects()} className="goDown">
                       <Jump delay={1000} duration={2000} forever={true}>
-                        <img src={arrowDown} className="arrowDown"></img>
+                        <img src={arrowDown} className="arrowDown" id="arrowDown"></img>
                       </Jump>
                       <p href='#learnmore' className="small-caption">Scroll down to learn more</p>
                     </div>
@@ -70,7 +92,7 @@ function Welcome() {
                       <p className="about_text_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit faucibus mollis. Praesent ultrices vehicula hendrerit. Maecenas ut ante ut magna viverra consequat. Sed pretium viverra quam non blandit. Nullam bibendum odio non posuere venenatis. Aliquam a quam non velit pharetra convallis. Duis lorem libero, vehicula fermentum elementum vel, finibus at purus. </p>
                     </div>
                     <div className="div_about_image">
-                      <img src={nashita} className="about_image"></img>
+                      <img src={nashita} className="about_image" id="sign"></img>
                     </div>
                   </div>
 

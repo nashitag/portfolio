@@ -1,11 +1,11 @@
 [
     {
         "id": 1,
-        "name": "BIG BROTHER",
+        "name": "Big Brother",
         "date": "OCT-DEC 2018",
         "tag_line": "Facial Verification Security System",
-        "tag_img": "/work_images/work1_1.png",
-        "tags": [1, 2, 3, 4, 5, 6, 7, 8],
+        "tag_img": "/work_images/work1_5.png",
+        "tags": [1, 2, 3, 8, 9, 13],
         "summary": "Security systems of verification should establish a secure access control system by reducing both impersonations at work/school events and increasing administrative efficiency and speed.",
         "details": [
             {
@@ -17,7 +17,7 @@
             {
                 "id":"div_2",
                 "div_type": "text", 
-                "div_title": "Features of our System",
+                "div_title": "Features of the System",
                 "div_items": "1. Interactive mobile application to be used by organiser : Intuitive and easy to use \n 2. Facial recognition : Fast & accurate, Mobile devices already have camera, User Interface to display verification \n 3. Multi-factor authentication : Higher security \n Our solution comes in three parts, a registration app, facial recognition model and backend app for administrators. Firstly, the registration app records the registrant’s details (an image and ID) by taking a picture of registrant as well as recording down their ID. The image will be uploaded to the Publit.io platform via their API and the URL created will be sent over to firebase. \n This information is then sent over to Firebase and then analysed on the Python backend, with the Facenet model. After a result is obtained, the result is sent back to the registration app so that the user knows he is completed with the process. Lastly, we have another native Android application for administrators at the event. This app tracks the attendance of all registrants that are already present. This application also allows the administrator to do a manual confirmation of the registrant’s identify should the algorithm fail."
             },
             {
@@ -76,7 +76,7 @@
         "date": "DEC-JAN 2020-21",
         "tag_line": "React Native App for Inheritance Solutions on Blockchain",
         "tag_img": "/work_images/work2_1.png",
-        "tags": [9, 10, 11, 12, 13],
+        "tags": [4, 5, 10],
         "summary": "A React Native Application in iOS and Android for Digital e-Nomination to write and secure your will on blockchain.",
         "details": [
             {
@@ -128,6 +128,119 @@
                 "div_type": "image/jpg", 
                 "div_title": "Screenshots from Octowill",
                 "div_items": "/work_images/work2_4.png"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Horizon",
+        "date": "OCT-DEC 2017",
+        "tag_line": "Self-Balancing Tray",
+        "tag_img": "/work_images/work3_1.png",
+        "tags": [2, 3, 8, 12],
+        "summary": "Horizon is a self-balancing tray designed to maintain the stability of objects on its surface no matter the tilt that it experiences. This is especially useful for users with medical conditions that cause shaky hands (Essential tremor, Parkinson’s Disease).",
+        "details": [
+            {
+                "id": "div_1",
+                "div_type": "text", 
+                "div_title": "How it Works",
+                "div_items": "A central tray platform is nested within two outer frames connected by high powered electronic servo motors. The frames are built from light-weight aluminium shafts and Carbon Fibre rods to reduce its overall weight. All electronics are housed safely in a box located at the front of the tray. The box contains an in-built gyroscopic sensor which serves to detect any angular changes. When these changes are detected, servo motors oriented in the different axes are activated to correct the orientation of the central platform by an equal and opposite angle. In addition, the tray can also be used in multiple configurations. After our user studies, we found that waiters often hold their trays with one hand and serve food with the other. As such, we designed the tray to be either set at the one-handed or two-handed mode. With multiple options for carrying the tray and a reliable self-balancing feature, waiters need not worry about dropping items ever again."
+            },
+            {
+                "id": "div_2",
+                "div_type": "image/jpg", 
+                "div_title": "The Design Process",
+                "div_items":  "/work_images/work3_3.png"
+            },
+            {
+                "id": "div_5",
+                "div_type": "iframe/video",
+                "div_items": "https://drive.google.com/file/d/1nMo5KPcVX_CWQ13BgY8Hoykw9zF8CyoG/preview"
+                
+            },
+            {
+                "id": "div_4",
+                "div_type": "image/jpg", 
+                "div_title": "Sturdy Design",
+                "div_items":  "/work_images/work3_1.png"
+            },
+            {
+                "id": "div_3",
+                "div_type": "image/jpg", 
+                "div_title": "DYNAMIC MOTION",
+                "div_items":  "/work_images/work3_2.png"
+            }
+            
+        ]
+    },
+    {
+        "id": 4,
+        "name": "PAWS",
+        "date": "MARCH 2018",
+        "tag_line": "Plant Automated Watering System",
+        "tag_img": "/work_images/work4_1.png",
+        "tags": [],
+        "summary": "Plant care has always been a guessing game due to the lack of response from the plant except for the 'greeness' of the plant. With PAWS, we introduce the ability to observe the surrounding environment around the plant and use that information to give a more accurate picture of health. Plant carers are also able to get live analytics of the plant's health remotely, through the telegram bot. \n With PAWS, we aim to make plant care a hassle-free activity and promote a home gardening habit to make the world more green",
+        "details": [
+            {
+                "id": "div_1",
+                "div_type": "text", 
+                "div_title": "What Can PAWS Do?",
+                "div_items": "1. PAWS comes with three different sensors, Temperature, Light, and Moisture. A KIVY App displays the information collected by the sensors in a user friendly manner. \n 2. An adaptive watering schedule is implemented using machine learning, ensuring the plant is watered adequately. \n 3. Users can remotely water their plants as well using a Telegram bot that communicates with users. \n 4. Green Thumb Mode to build good watering habits."
+            },
+            {
+                "id": "div_2",
+                "div_type": "image/jpg", 
+                "div_title": "",
+                "div_items": "/work_images/work4_1.png"
+            },
+            {
+                "id": "div_3",
+                "div_type": "text", 
+                "div_title": "Kivy App",
+                "div_items": "The KIVY app provides graphs that log the temperature, light and moisture levels the plant is subject to. Dull Symbols indicate when temperatures are not optimum along with the next watering schedule for the plant. Users can export this plant data for their download as well. Clear big graphs give users more accurate data to detect anomalies and potential problems. A clean, minimalist interface makes it easy for users to navigate."
+            },
+            {
+                "id": "div_4",
+                "div_type": "image/jpg", 
+                "div_title": "Kivy App",
+                "div_items": "/work_images/work4_3.png"
+            },
+            {
+                "id": "div_6",
+                "div_type": "image/jpg", 
+                "div_title": "Telegram Bot",
+                "div_items": "/work_images/work4_4.png"
+            },
+            {
+                "id": "div_5",
+                "div_type": "text", 
+                "div_title": "Telegram Bot",
+                "div_items": "The telegram bot allows users to manage their plant remotely. Along with the latest statistics of the plant, users can toggle between Automated Watering Mode and Green Thumb Mode."
+            },
+            {
+                "id": "div_7",
+                "div_type": "text", 
+                "div_title": "GREEN THUMB MODE",
+                "div_items": "Green thumb mode is a habit training mode where instead of having an automated watering system, plant carers are informed of the estimated next watering time. This builds initiative and a good watering habit to good plant care. \n Once Green Thumb Mode is activated, users are sent notifications on the Telegram bot, reminding them when to water their plant. This Mode is useful in cultivating a sense of responsibility in budding plant lovers. Through such a learning experience, the user will become more apt in taking care of the plants’ needs."
+            },
+            {
+                "id": "div_8",
+                "div_type": "image/jpg", 
+                "div_title": "GREEN THUMB MODE",
+                "div_items": "/work_images/work4_5.png"
+            },
+            {
+                "id": "div_9",
+                "div_type": "image/jpg", 
+                "div_title": "Machine Learning Model - A Linear Regression model was used for User Habit Modeling.",
+                "div_items": "/work_images/work4_6.png"
+            },
+            {
+                "id": "div_10",
+                "div_type": "image/jpg", 
+                "div_title": "Flow Diagram",
+                "div_items": "/work_images/work4_7.png"
             }
         ]
     }

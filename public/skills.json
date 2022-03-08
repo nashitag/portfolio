@@ -27,7 +27,7 @@
     {
         "value": 6,
         "label": "Swift",
-        "type": "Language"
+        "type": "Programming-Language"
     },
     {
         "value": 7,
@@ -37,17 +37,17 @@
     {
         "value": 8,
         "label": "Python",
-        "type": "Language"
+        "type": "Programming-Language"
     },
     {
         "value": 9,
         "label": "Java",
-        "type": "Language"
+        "type": "Programming-Language"
     },
     {
         "value": 10,
         "label": "JavaScript",
-        "type": "Language"
+        "type": "Programming-Language"
     },
     {
         "value": 11,
