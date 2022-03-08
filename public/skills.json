@@ -63,5 +63,25 @@
         "value": 13,
         "label": "Machine Learning",
         "type": "Technical"
+    },
+    {
+        "value": 14,
+        "label": "Data Modeling",
+        "type": "Technical"
+    },
+    {
+        "value": 17,
+        "label": "Data Visualization and Simulations",
+        "type": "Technical"
+    },
+    {
+        "value": 15,
+        "label": "nodeJS",
+        "type": "Technical"
+    },
+    {
+        "value": 16,
+        "label": "Amazon AWS",
+        "type": "Technical"
     }
 ]

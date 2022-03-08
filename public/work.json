@@ -1,72 +1,44 @@
 [
     {
-        "id": 1,
-        "name": "Big Brother",
-        "date": "OCT-DEC 2018",
-        "tag_line": "Facial Verification Security System",
-        "tag_img": "/work_images/work1_5.png",
-        "tags": [1, 2, 3, 8, 9, 13],
-        "summary": "Security systems of verification should establish a secure access control system by reducing both impersonations at work/school events and increasing administrative efficiency and speed.",
+        "id": 6,
+        "name": "Dogges Swap",
+        "date": "OCT 2021",
+        "tag_line": "React App for decentralized exchange platform - Dogges Swap",
+        "tag_img": "/work_images/work6_1.jpeg",
+        "tags": [4],
+        "summary": "DOGGES decentralized exchange platform effectively cuts out intermediaries while offering users a seamless experience of token exchange.",
         "details": [
             {
-                "id":"div_1",
-                "div_type": "text", 
-                "div_title": "Problem Statement",
-                "div_items": "Security systems of verification should establish a secure access control system by reducing both impersonations at work/school events and increasing administrative efficiency and speed."
-            },
-            {
-                "id":"div_2",
-                "div_type": "text", 
-                "div_title": "Features of the System",
-                "div_items": "1. Interactive mobile application to be used by organiser : Intuitive and easy to use \n 2. Facial recognition : Fast & accurate, Mobile devices already have camera, User Interface to display verification \n 3. Multi-factor authentication : Higher security \n Our solution comes in three parts, a registration app, facial recognition model and backend app for administrators. Firstly, the registration app records the registrant’s details (an image and ID) by taking a picture of registrant as well as recording down their ID. The image will be uploaded to the Publit.io platform via their API and the URL created will be sent over to firebase. \n This information is then sent over to Firebase and then analysed on the Python backend, with the Facenet model. After a result is obtained, the result is sent back to the registration app so that the user knows he is completed with the process. Lastly, we have another native Android application for administrators at the event. This app tracks the attendance of all registrants that are already present. This application also allows the administrator to do a manual confirmation of the registrant’s identify should the algorithm fail."
-            },
-            {
-                "id":"div_3",
-                "div_type": "image/jpg", 
-                "div_title": "Add-New-User App",
-                "div_items": "/work_images/work1_1.png"
-            },
-            {
-                "id":"div_4",
-                "div_type": "text", 
-                "div_title": "Add-New-User App",
-                "div_items": "The application retrieves the data of the new user and posts them to a firebase database where we will later use the data as part of the training set for the python face recognition model. The application also implemented code that would prompt the user to allow specific permissions if they are not pre-approved. \n The application uses the Action_image_capture to take a picture via the phone camera and that image is processed into an image url via the Publito API afterwards. This url is then posted to firebase as well to be used as a reference photo. \n On successful registration of a new user, the user is shown a page indicating that they have successfully registered."
-            },
-            {
-                "id":"div_5",
-                "div_type": "image/jpg", 
-                "div_title": "Registration App",
-                "div_items": "/work_images/work1_2.png"
-            },
-            {
-                "id":"div_6",
-                "div_type": "text", 
-                "div_title": "Registration App",
-                "div_items": "The application retrieves the data of the registrant and posts them to a firebase database where we will use the data in the python face recognition model. The model then returns us a signal if the registration is successful or not, where by the user will be brought to a successfully registered or failed to register page. (shown below) The code makes use of firebase’s onChildAdded event listener to alert the camera activity such that the correct activity (success or failure) is prompted after the data is sent to firebase. \n The application also implemented code that would prompt the user to allow specific permissions if they are not pre-approved. \n The application uses the Action_image_capture to take a picture via the phone camera and that image is processed into an image url via the Publito API afterwards. This url is then posted to firebase as well to be used as a verification photo. The model will check if the person in the photo is the same one in the reference photo."
-            },
-            {
-                "id":"div_7",
-                "div_type": "image/jpg", 
-                "div_title": "Administrator App",
-                "div_items": "/work_images/work1_3.png"
-            },
-            {
-                "id":"div_8",
-                "div_type": "text", 
-                "div_title": "Administrator App",
-                "div_items": "The administrator’s App aims to give an overview of the Event for which registrations are currently taking place. Organizers can keep track of every individual that has been registered, or has been rejected. Furthermore, the organizer can Manually Verify a registrant in the case where his/her face has been rejected by the facial verification model. Hence, enabling a multi layer verification system"
-            },
-            {
-                "id":"div_7",
+                "id": "div_1",
                 "div_type": "image/jpg", 
                 "div_title": "",
-                "div_items": "/work_images/work1_4.png"
+                "div_items": "/work_images/work6_2.png"
             },
             {
-                "id":"div_8",
-                "div_type": "text", 
+                "id": "div_2",
+                "div_type": "hyperlink", 
+                "div_title": "Find out more details on Dogges-Swap here",
+                "div_symbol": "/work_images/work6__1.png",
+                "div_link": "https://dogges.finance/dogges-swap/"
+            },
+            {
+                "id": "div_3",
+                "div_type": "hyperlink", 
+                "div_title": "Checkout the live React App here",
+                "div_symbol": "/work_images/work6__2.png",
+                "div_link": "https://testnetswap.dogges.finance/"
+            },
+            {
+                "id": "div_4",
+                "div_type": "image/jpg", 
                 "div_title": "",
-                "div_items": "The Administrator App has the following functionalities:\n 1. A home page that gives an insight into the event that is taking place \n 2. 'Registered’ page, that provides a ListView of individuals that have been verified, along with the ID and type(Student, Staff, Alumni) \n 3. Manually Registered List that provides a list of individuals that have been registered by the organizer himself \n 4. ‘Blacklist’ page, that provides a ListView of individuals that have been rejected by the organizer due to impersonation(imposter) \n 5. Provides a platform that displays a list of individuals that have been rejected by the Facial Verification Model. Further, displays the Name, ID, and Photograph of individual to be manually verified for the organizer \n 6. Provides an overview of number of Students, Staff and Alumni present at the event"
+                "div_items": "/work_images/work6_3.png"
+            },
+            {
+                "id": "div_5",
+                "div_type": "image/jpg", 
+                "div_title": "App Screens",
+                "div_items": "/work_images/work6_4.png"
             }
         ]
     },
@@ -132,45 +104,148 @@
         ]
     },
     {
-        "id": 3,
-        "name": "Horizon",
-        "date": "OCT-DEC 2017",
-        "tag_line": "Self-Balancing Tray",
-        "tag_img": "/work_images/work3_1.png",
-        "tags": [2, 3, 8, 12],
-        "summary": "Horizon is a self-balancing tray designed to maintain the stability of objects on its surface no matter the tilt that it experiences. This is especially useful for users with medical conditions that cause shaky hands (Essential tremor, Parkinson’s Disease).",
+        "id": 5,
+        "name": "Project OMAR - Capstone",
+        "date": "JAN-JUN 2020",
+        "tag_line": "Impact assessment tool designed to aid disaster relief planners",
+        "tag_img": "/work_images/work5_1.png",
+        "tags": [2, 3, 14, 8, 17, 15, 16, 4],
+        "summary": "Project Open Mapping for ASEAN Regions is an impact assessment tool designed to aid disaster relief planners, specifically contingency planners, in assessing the damage caused by rainfall in the ASEAN regions. We hope to empower contingency planners to make better decisions through Project OMAR.",
         "details": [
             {
                 "id": "div_1",
                 "div_type": "text", 
-                "div_title": "How it Works",
-                "div_items": "A central tray platform is nested within two outer frames connected by high powered electronic servo motors. The frames are built from light-weight aluminium shafts and Carbon Fibre rods to reduce its overall weight. All electronics are housed safely in a box located at the front of the tray. The box contains an in-built gyroscopic sensor which serves to detect any angular changes. When these changes are detected, servo motors oriented in the different axes are activated to correct the orientation of the central platform by an equal and opposite angle. In addition, the tray can also be used in multiple configurations. After our user studies, we found that waiters often hold their trays with one hand and serve food with the other. As such, we designed the tray to be either set at the one-handed or two-handed mode. With multiple options for carrying the tray and a reliable self-balancing feature, waiters need not worry about dropping items ever again."
+                "div_title": "What is Project OMAR",
+                "div_items": "Project OMAR helps contingency planners develop an active and timely plan involving disaster-relief operations. The tool also allows planners to gain information from varying sources and impact models in a comprehensive manner to analyse and develop an action plan. \n This impact assessment tool aids the contingency planner in every step of his planning process. It helps the planner develop a plan to ensure the active provision of humanitarian aid to those most in need."
+            },
+            {
+                "id": "div_9",
+                "div_type": "hyperlink", 
+                "div_title": "Meet our team and checkout our interview - Before Disaster Strikes - here.",
+                "div_symbol": "/work_images/work5__1.png",
+                "div_link": "https://wearesutd.sutd.edu.sg/sutd-ents/capstone/before-disaster-strikes/"
             },
             {
                 "id": "div_2",
                 "div_type": "image/jpg", 
-                "div_title": "The Design Process",
-                "div_items":  "/work_images/work3_3.png"
-            },
-            {
-                "id": "div_5",
-                "div_type": "iframe/video",
-                "div_items": "https://drive.google.com/file/d/1nMo5KPcVX_CWQ13BgY8Hoykw9zF8CyoG/preview"
-                
-            },
-            {
-                "id": "div_4",
-                "div_type": "image/jpg", 
-                "div_title": "Sturdy Design",
-                "div_items":  "/work_images/work3_1.png"
+                "div_title": "",
+                "div_items": "/work_images/work5_2.png"
             },
             {
                 "id": "div_3",
                 "div_type": "image/jpg", 
-                "div_title": "DYNAMIC MOTION",
-                "div_items":  "/work_images/work3_2.png"
+                "div_title": "",
+                "div_items": "/work_images/work5_3.png"
+            },
+            {
+                "id": "div_4",
+                "div_type": "text", 
+                "div_title": "Features",
+                "div_items": "• Designed and developed an impact assessment tool to aid planners develop an effective plan for disaster relief operations. \n • Simulated a flood & impact model to assess the damage caused by rainfall, by aggregating up to 10 sources of data. \n • Engineered key front-end features of the geospatial visualization platform to enable an effective user experience. \n • Spearheaded and implemented essential pipelines of the solution architecture i.e. geodata processing & computation scripts."
+            },
+            {
+                "id": "div_5",
+                "div_type": "image/jpg", 
+                "div_title": "",
+                "div_items": "/work_images/work5_4.png"
+            },
+            {
+                "id": "div_6",
+                "div_type": "image/jpg", 
+                "div_title": "",
+                "div_items": "/work_images/work5_5.png"
+            },
+            {
+                "id": "div_7",
+                "div_type": "image/jpg", 
+                "div_title": "",
+                "div_items": "/work_images/work5_6.png"
+            },
+            {
+                "id": "div_8",
+                "div_type": "image/jpg", 
+                "div_title": "",
+                "div_items": "/work_images/work5_7.png"
             }
             
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Big Brother",
+        "date": "OCT-DEC 2018",
+        "tag_line": "Facial Verification Security System",
+        "tag_img": "/work_images/work1_5.png",
+        "tags": [1, 2, 3, 8, 9, 13],
+        "summary": "Security systems of verification should establish a secure access control system by reducing both impersonations at work/school events and increasing administrative efficiency and speed.",
+        "details": [
+            {
+                "id":"div_1",
+                "div_type": "text", 
+                "div_title": "Problem Statement",
+                "div_items": "Security systems of verification should establish a secure access control system by reducing both impersonations at work/school events and increasing administrative efficiency and speed."
+            },
+            {
+                "id": "div_9",
+                "div_type": "hyperlink", 
+                "div_title": "Checkout the code-repo on Github",
+                "div_symbol": "/work_images/github.png",
+                "div_link": "https://github.com/nashitag/Facial_Verification_System_OrganizerApp"
+            },
+            {
+                "id":"div_2",
+                "div_type": "text", 
+                "div_title": "Features of the System",
+                "div_items": "1. Interactive mobile application to be used by organiser : Intuitive and easy to use \n 2. Facial recognition : Fast & accurate, Mobile devices already have camera, User Interface to display verification \n 3. Multi-factor authentication : Higher security \n Our solution comes in three parts, a registration app, facial recognition model and backend app for administrators. Firstly, the registration app records the registrant’s details (an image and ID) by taking a picture of registrant as well as recording down their ID. The image will be uploaded to the Publit.io platform via their API and the URL created will be sent over to firebase. \n This information is then sent over to Firebase and then analysed on the Python backend, with the Facenet model. After a result is obtained, the result is sent back to the registration app so that the user knows he is completed with the process. Lastly, we have another native Android application for administrators at the event. This app tracks the attendance of all registrants that are already present. This application also allows the administrator to do a manual confirmation of the registrant’s identify should the algorithm fail."
+            },
+            {
+                "id":"div_3",
+                "div_type": "image/jpg", 
+                "div_title": "Add-New-User App",
+                "div_items": "/work_images/work1_1.png"
+            },
+            {
+                "id":"div_4",
+                "div_type": "text", 
+                "div_title": "Add-New-User App",
+                "div_items": "The application retrieves the data of the new user and posts them to a firebase database where we will later use the data as part of the training set for the python face recognition model. The application also implemented code that would prompt the user to allow specific permissions if they are not pre-approved. \n The application uses the Action_image_capture to take a picture via the phone camera and that image is processed into an image url via the Publito API afterwards. This url is then posted to firebase as well to be used as a reference photo. \n On successful registration of a new user, the user is shown a page indicating that they have successfully registered."
+            },
+            {
+                "id":"div_5",
+                "div_type": "image/jpg", 
+                "div_title": "Registration App",
+                "div_items": "/work_images/work1_2.png"
+            },
+            {
+                "id":"div_6",
+                "div_type": "text", 
+                "div_title": "Registration App",
+                "div_items": "The application retrieves the data of the registrant and posts them to a firebase database where we will use the data in the python face recognition model. The model then returns us a signal if the registration is successful or not, where by the user will be brought to a successfully registered or failed to register page. (shown below) The code makes use of firebase’s onChildAdded event listener to alert the camera activity such that the correct activity (success or failure) is prompted after the data is sent to firebase. \n The application also implemented code that would prompt the user to allow specific permissions if they are not pre-approved. \n The application uses the Action_image_capture to take a picture via the phone camera and that image is processed into an image url via the Publito API afterwards. This url is then posted to firebase as well to be used as a verification photo. The model will check if the person in the photo is the same one in the reference photo."
+            },
+            {
+                "id":"div_7",
+                "div_type": "image/jpg", 
+                "div_title": "Administrator App",
+                "div_items": "/work_images/work1_3.png"
+            },
+            {
+                "id":"div_8",
+                "div_type": "text", 
+                "div_title": "Administrator App",
+                "div_items": "The administrator’s App aims to give an overview of the Event for which registrations are currently taking place. Organizers can keep track of every individual that has been registered, or has been rejected. Furthermore, the organizer can Manually Verify a registrant in the case where his/her face has been rejected by the facial verification model. Hence, enabling a multi layer verification system"
+            },
+            {
+                "id":"div_7",
+                "div_type": "image/jpg", 
+                "div_title": "",
+                "div_items": "/work_images/work1_4.png"
+            },
+            {
+                "id":"div_8",
+                "div_type": "text", 
+                "div_title": "",
+                "div_items": "The Administrator App has the following functionalities:\n 1. A home page that gives an insight into the event that is taking place \n 2. 'Registered’ page, that provides a ListView of individuals that have been verified, along with the ID and type(Student, Staff, Alumni) \n 3. Manually Registered List that provides a list of individuals that have been registered by the organizer himself \n 4. ‘Blacklist’ page, that provides a ListView of individuals that have been rejected by the organizer due to impersonation(imposter) \n 5. Provides a platform that displays a list of individuals that have been rejected by the Facial Verification Model. Further, displays the Name, ID, and Photograph of individual to be manually verified for the organizer \n 6. Provides an overview of number of Students, Staff and Alumni present at the event"
+            }
         ]
     },
     {
@@ -187,6 +262,13 @@
                 "div_type": "text", 
                 "div_title": "What Can PAWS Do?",
                 "div_items": "1. PAWS comes with three different sensors, Temperature, Light, and Moisture. A KIVY App displays the information collected by the sensors in a user friendly manner. \n 2. An adaptive watering schedule is implemented using machine learning, ensuring the plant is watered adequately. \n 3. Users can remotely water their plants as well using a Telegram bot that communicates with users. \n 4. Green Thumb Mode to build good watering habits."
+            },
+            {
+                "id": "div_11",
+                "div_type": "hyperlink", 
+                "div_title": "Checkout the code-repo on Github",
+                "div_symbol": "/work_images/github.png",
+                "div_link": "https://github.com/nashitag/PAWS_plant_auto_watering_system"
             },
             {
                 "id": "div_2",
@@ -245,68 +327,43 @@
         ]
     },
     {
-        "id": 5,
-        "name": "Project OMAR - Capstone",
-        "date": "JAN-JUN 2020",
-        "tag_line": "Impact assessment tool designed to aid disaster relief planners",
-        "tag_img": "/work_images/work5_1.png",
-        "tags": [],
-        "summary": "Project Open Mapping for ASEAN Regions is an impact assessment tool designed to aid disaster relief planners, specifically contingency planners, in assessing the damage caused by rainfall in the ASEAN regions. We hope to empower contingency planners to make better decisions through Project OMAR.",
+        "id": 3,
+        "name": "Horizon",
+        "date": "OCT-DEC 2017",
+        "tag_line": "Self-Balancing Tray",
+        "tag_img": "/work_images/work3_1.png",
+        "tags": [2, 3, 8, 12],
+        "summary": "Horizon is a self-balancing tray designed to maintain the stability of objects on its surface no matter the tilt that it experiences. This is especially useful for users with medical conditions that cause shaky hands (Essential tremor, Parkinson’s Disease).",
         "details": [
             {
                 "id": "div_1",
                 "div_type": "text", 
-                "div_title": "What is Project OMAR",
-                "div_items": "Project OMAR helps contingency planners develop an active and timely plan involving disaster-relief operations. The tool also allows planners to gain information from varying sources and impact models in a comprehensive manner to analyse and develop an action plan. \n This impact assessment tool aids the contingency planner in every step of his planning process. It helps the planner develop a plan to ensure the active provision of humanitarian aid to those most in need."
-            },
-            {
-                "id": "div_9",
-                "div_type": "hyperlink", 
-                "div_title": "Meet our team and view our interview - Before Disaster Strikes - here.",
-                "div_symbol": "/work_images/work5__1.png",
-                "div_link": "https://wearesutd.sutd.edu.sg/sutd-ents/capstone/before-disaster-strikes/"
+                "div_title": "How it Works",
+                "div_items": "A central tray platform is nested within two outer frames connected by high powered electronic servo motors. The frames are built from light-weight aluminium shafts and Carbon Fibre rods to reduce its overall weight. All electronics are housed safely in a box located at the front of the tray. The box contains an in-built gyroscopic sensor which serves to detect any angular changes. When these changes are detected, servo motors oriented in the different axes are activated to correct the orientation of the central platform by an equal and opposite angle. In addition, the tray can also be used in multiple configurations. After our user studies, we found that waiters often hold their trays with one hand and serve food with the other. As such, we designed the tray to be either set at the one-handed or two-handed mode. With multiple options for carrying the tray and a reliable self-balancing feature, waiters need not worry about dropping items ever again."
             },
             {
                 "id": "div_2",
                 "div_type": "image/jpg", 
-                "div_title": "",
-                "div_items": "/work_images/work5_2.png"
+                "div_title": "The Design Process",
+                "div_items":  "/work_images/work3_3.png"
+            },
+            {
+                "id": "div_5",
+                "div_type": "iframe/video",
+                "div_items": "https://drive.google.com/file/d/1nMo5KPcVX_CWQ13BgY8Hoykw9zF8CyoG/preview"
+                
+            },
+            {
+                "id": "div_4",
+                "div_type": "image/jpg", 
+                "div_title": "Sturdy Design",
+                "div_items":  "/work_images/work3_1.png"
             },
             {
                 "id": "div_3",
                 "div_type": "image/jpg", 
-                "div_title": "",
-                "div_items": "/work_images/work5_3.png"
-            },
-            {
-                "id": "div_4",
-                "div_type": "text", 
-                "div_title": "Features",
-                "div_items": "• Designed and developed an impact assessment tool to aid planners develop an effective plan for disaster relief operations. \n • Simulated a flood & impact model to assess the damage caused by rainfall, by aggregating up to 10 sources of data. \n • Engineered key front-end features of the geospatial visualization platform to enable an effective user experience. \n • Spearheaded and implemented essential pipelines of the solution architecture i.e. geodata processing & computation scripts."
-            },
-            {
-                "id": "div_5",
-                "div_type": "image/jpg", 
-                "div_title": "",
-                "div_items": "/work_images/work5_4.png"
-            },
-            {
-                "id": "div_6",
-                "div_type": "image/jpg", 
-                "div_title": "",
-                "div_items": "/work_images/work5_5.png"
-            },
-            {
-                "id": "div_7",
-                "div_type": "image/jpg", 
-                "div_title": "",
-                "div_items": "/work_images/work5_6.png"
-            },
-            {
-                "id": "div_8",
-                "div_type": "image/jpg", 
-                "div_title": "",
-                "div_items": "/work_images/work5_7.png"
+                "div_title": "DYNAMIC MOTION",
+                "div_items":  "/work_images/work3_2.png"
             }
             
         ]
