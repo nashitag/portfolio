@@ -179,7 +179,7 @@
         "date": "MARCH 2018",
         "tag_line": "Plant Automated Watering System",
         "tag_img": "/work_images/work4_1.png",
-        "tags": [],
+        "tags": [2, 3, 8, 12, 13],
         "summary": "Plant care has always been a guessing game due to the lack of response from the plant except for the 'greeness' of the plant. With PAWS, we introduce the ability to observe the surrounding environment around the plant and use that information to give a more accurate picture of health. Plant carers are also able to get live analytics of the plant's health remotely, through the telegram bot. \n With PAWS, we aim to make plant care a hassle-free activity and promote a home gardening habit to make the world more green",
         "details": [
             {
@@ -242,6 +242,73 @@
                 "div_title": "Flow Diagram",
                 "div_items": "/work_images/work4_7.png"
             }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Project OMAR - Capstone",
+        "date": "JAN-JUN 2020",
+        "tag_line": "Impact assessment tool designed to aid disaster relief planners",
+        "tag_img": "/work_images/work5_1.png",
+        "tags": [],
+        "summary": "Project Open Mapping for ASEAN Regions is an impact assessment tool designed to aid disaster relief planners, specifically contingency planners, in assessing the damage caused by rainfall in the ASEAN regions. We hope to empower contingency planners to make better decisions through Project OMAR.",
+        "details": [
+            {
+                "id": "div_1",
+                "div_type": "text", 
+                "div_title": "What is Project OMAR",
+                "div_items": "Project OMAR helps contingency planners develop an active and timely plan involving disaster-relief operations. The tool also allows planners to gain information from varying sources and impact models in a comprehensive manner to analyse and develop an action plan. \n This impact assessment tool aids the contingency planner in every step of his planning process. It helps the planner develop a plan to ensure the active provision of humanitarian aid to those most in need."
+            },
+            {
+                "id": "div_9",
+                "div_type": "hyperlink", 
+                "div_title": "Meet our team and view our interview - Before Disaster Strikes - here.",
+                "div_symbol": "/work_images/work5__1.png",
+                "div_link": "https://wearesutd.sutd.edu.sg/sutd-ents/capstone/before-disaster-strikes/"
+            },
+            {
+                "id": "div_2",
+                "div_type": "image/jpg", 
+                "div_title": "",
+                "div_items": "/work_images/work5_2.png"
+            },
+            {
+                "id": "div_3",
+                "div_type": "image/jpg", 
+                "div_title": "",
+                "div_items": "/work_images/work5_3.png"
+            },
+            {
+                "id": "div_4",
+                "div_type": "text", 
+                "div_title": "Features",
+                "div_items": "• Designed and developed an impact assessment tool to aid planners develop an effective plan for disaster relief operations. \n • Simulated a flood & impact model to assess the damage caused by rainfall, by aggregating up to 10 sources of data. \n • Engineered key front-end features of the geospatial visualization platform to enable an effective user experience. \n • Spearheaded and implemented essential pipelines of the solution architecture i.e. geodata processing & computation scripts."
+            },
+            {
+                "id": "div_5",
+                "div_type": "image/jpg", 
+                "div_title": "",
+                "div_items": "/work_images/work5_4.png"
+            },
+            {
+                "id": "div_6",
+                "div_type": "image/jpg", 
+                "div_title": "",
+                "div_items": "/work_images/work5_5.png"
+            },
+            {
+                "id": "div_7",
+                "div_type": "image/jpg", 
+                "div_title": "",
+                "div_items": "/work_images/work5_6.png"
+            },
+            {
+                "id": "div_8",
+                "div_type": "image/jpg", 
+                "div_title": "",
+                "div_items": "/work_images/work5_7.png"
+            }
+            
         ]
     }
 ]

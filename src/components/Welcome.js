@@ -12,8 +12,6 @@ import { useState, useEffect } from 'react';
 import Navbarr from './NavBarr';
 import { SocialIcon } from 'react-social-icons';
 import useMediaQuery from '@mui/material/useMediaQuery';
-// import * as mobilenet from '@tensorflow-models/mobilenet';
-// import * as tfjs from '@tensorflow/tfjs';
 
   // configureAnchors({offset: -100})
 
