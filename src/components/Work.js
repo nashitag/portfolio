@@ -74,17 +74,23 @@ function Work() {
         const filteredWORKData = []
         tags.forEach(element => {
           const work = unmutableWorkJSON.filter(data => data.tags.includes(element))
-          console.log(element, work)
+          console.log("checking", element, work)
+          // work is an array
+          // check for duplicates in filteredWORKData array
+          const result = work.filter(function(project) {
+            if(idExists(project.id, filteredWORKData)==false){
+              return project
+            }
+            else{
+                console.log("ID is already in Array:", project.id)
+              }
+          });
 
-          //check for duplicates in array
-          if(idExists(work[0].id, filteredWORKData)==false){
-            filteredWORKData.push(work[0])
-          }
-          else{
-            console.log("ID is already in Array")
-          }
+          console.log("Pushing following data to filteredWORKData", result)
+          filteredWORKData.push(...result)
+
         })
-        // console.log("filteredWORKData", filteredWORKData)
+        console.log("filteredWORKData", filteredWORKData)
         setWorkJSON(filteredWORKData)
       }
     }
