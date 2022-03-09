@@ -5,6 +5,7 @@ import { useLocation, Link } from "react-router-dom";
 import './Work.css';
 import {Container, Row, Col} from 'react-bootstrap';
 import MultipleSelectChips from './MultipleSelectChips';
+import gtag from 'ga-gtag';
 
 function Work() {
     const [workJSON,setWorkJSON]=useState([]);
@@ -101,7 +102,12 @@ function Work() {
       }); 
     }
      
-    
+    function registerGTAGevent(name){
+      console.log('registering',name)
+      gtag('event', 'view_project', {
+        "project_name": name,
+      })    
+    }
 
 
     return (
@@ -122,7 +128,7 @@ function Work() {
                 <Row className="workContainerROW" >
                 {workJSON.map((project) => (
                     <Col key={project.id} className="workContainerCOL" >
-                        <div className="projectContainer">
+                        <div className="projectContainer" onClick={()=>registerGTAGevent(project.name)}>
                             <Link
                                 to={{
                                     pathname: `/work/${project.id}`,
@@ -149,18 +155,4 @@ function Work() {
 
 }
 export default Work;
-
-class Helpers {
-
-  static contains(orig, filter) {
-    let res = filter.map(item => {
-      return orig.includes(item);
-    });
-    return !res.includes(false);
-  }
-  
-  static hasDuplicates(array) {
-    return (new Set(array)).size !== array.length;
-  }
-}
   

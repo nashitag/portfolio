@@ -13,6 +13,7 @@
     "TagCloud": "^2.2.0",
     "animate.css": "^4.1.1",
     "bootstrap": "5.1.3",
+    "ga-gtag": "^1.1.1",
     "jquery": "^3.6.0",
     "react": "^17.0.2",
     "react-animations": "^1.0.0",

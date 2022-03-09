@@ -70,7 +70,7 @@ function WorkDetail() {
         const [divDetails, setDivDetails] = useState(props.divDetails);
 
         return (
-            <div className="div_body" >
+            <div className="div_body" key={props.key} >
               {divDetails.div_type=="text" ? 
                 <>
                   <p className="div_title_text">{divDetails.div_title}</p>
@@ -121,7 +121,7 @@ function WorkDetail() {
               </div>
               <div className="skillsContainer">
                 {skills.map((skill) => (
-                  <div className="skill_body">
+                  <div className="skill_body" key={skill.id}>
                     <p className="skill_text">{skill.label}</p>
                   </div>
                 ))}
@@ -129,7 +129,7 @@ function WorkDetail() {
               <XMasonry maxColumns={2} responsive={true} updateOnFontLoad={true} targetBlockWidth={600}>
                 {details.map((detail) => (
                       <XBlock >
-                        <RenderDiv divDetails={detail}/>
+                        <RenderDiv key={detail.id} divDetails={detail}/>
                       </XBlock>
                   ) )}
               </XMasonry>
