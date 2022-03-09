@@ -104,6 +104,59 @@
         ]
     },
     {
+        "id": 8,
+        "name": "Qunae Masks UAE",
+        "date": "OCT-DEC 2020",
+        "tag_line": "eCommerce start-up/business for chic handcrafted Italian masks",
+        "tag_img": "/work_images/work8_1.png",
+        "tags": [20, 21, 22],
+        "summary": "Qunae-UAE masks are unique designer face masks, handcrafted by artisans in Italy – using exquisite, breathable fabrics – and brought to the UAE with love. Our products blend the notion of safety with style, so that you can be a responsible citizen while looking and feeling good. We created 5-6 SEO and promotional campaigns, working with Instagram, Snapchat and TikTok Ads.",
+        "details": [
+            {
+                "id": "div_1",
+                "div_type": "text", 
+                "div_title": "Social Media Ads Strategy",
+                "div_items": "We conceived and managed multiple content strategies that increased website traffic and brand awareness drastically. \n We studied and analysed social-media Ads campaigns and created content creation and roll-out plans. \n Deployed lead-generation tactics to bring in new subscriptions via Social Media campaigns. Maintained brand innovation and kept abreast of the latest social media trends. Researched user base to determine writing style and voice. Shared posts on social media platforms and email newsletter."
+            },
+            {
+                "id": "div_2",
+                "div_type": "iframe/video", 
+                "div_items": "https://drive.google.com/file/d/1K3KHy-wf6jvdWefA-EGB0JkCrrUlVpww/preview" 
+            },
+            {
+                "id": "div_3",
+                "div_type": "text", 
+                "div_title": "Marketing Strategies Outcomes",
+                "div_items": ""
+            },
+            {
+                "id": "div_4",
+                "div_type": "image/jpg", 
+                "div_title": "Sample Snapchat Ads",
+                "div_items": "/work_images/work8_3.png"
+            },
+            {
+                "id": "div_5",
+                "div_type": "image/jpg", 
+                "div_title": "Snapchat Ads Reach",
+                "div_items": "/work_images/work8_4.png"
+            },
+            {
+                "id": "div_5",
+                "div_type": "image/jpg", 
+                "div_title": "TikTok Ads Reach and Brand Awareness to over 240,000 people. TikTok posts received over 2k plus likes each.",
+                "div_items": "/work_images/work8_5.png"
+            },
+            {
+                "id": "div_6",
+                "div_type": "text", 
+                "div_title": "SEO",
+                "div_items": "Improvised Qunae-UAE website keywords based on trend analysis. \n Connected the Qunae Site to Google Analytics. Index our site with Google Search Console to get listed in search results. \n Update all SEO Titles and Descriptions for Home-page, About Us, FAQ, Mens, Womens, Boys, Girls page. Improved website performance by 70%."
+            }
+            
+        ]
+    },
+    {
         "id": 5,
         "name": "Project OMAR - Capstone",
         "date": "JAN-JUN 2020",
@@ -168,6 +221,34 @@
                 "div_items": "/work_images/work5_7.png"
             }
             
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Dashboard App",
+        "date": "MAY 2019",
+        "tag_line": "MEAN Stack Dashboard App",
+        "tag_img": "/work_images/work7_2.jpg",
+        "tags": [15, 18, 19],
+        "summary": "MEAN Stack Dashboard App for Instagram Influencers",
+        "details": [
+            {
+                "id": "div_1",
+                "div_type": "iframe/video", 
+                "div_items": "https://drive.google.com/file/d/1KDe2lLuUxhlOwmN96o31CoKC31SsFlJs/preview"
+            },
+            {
+                "id": "div_2",
+                "div_type": "hyperlink", 
+                "div_title": "Checkout the code-repo on Github",
+                "div_symbol": "/work_images/github.png",
+                "div_link": "https://github.com/nashitag/Affable_testApp"
+            },
+            {
+                "id": "div_3",
+                "div_type": "iframe/video", 
+                "div_items": "https://drive.google.com/file/d/1KQ2eH6Vj5iF3DN4v0L7fbP2l95b4Z1AZ/preview"
+            }
         ]
     },
     {

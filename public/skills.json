@@ -70,11 +70,6 @@
         "type": "Technical"
     },
     {
-        "value": 17,
-        "label": "Data Visualization and Simulations",
-        "type": "Technical"
-    },
-    {
         "value": 15,
         "label": "nodeJS",
         "type": "Technical"
@@ -83,5 +78,35 @@
         "value": 16,
         "label": "Amazon AWS",
         "type": "Technical"
+    },
+    {
+        "value": 17,
+        "label": "Data Visualization and Simulations",
+        "type": "Technical"
+    },
+    {
+        "value": 18,
+        "label": "Angular",
+        "type": "Technical"
+    },
+    {
+        "value": 19,
+        "label": "MongoDB",
+        "type": "Technical"
+    },
+    {
+        "value": 20,
+        "label": "Strategic Planning",
+        "type": "Strategy"
+    },
+    {
+        "value": 21,
+        "label": "Market Research",
+        "type": "Strategy"
+    },
+    {
+        "value": 22,
+        "label": "SEO and Brand Marketing",
+        "type": "Strategy"
     }
 ]
