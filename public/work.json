@@ -157,6 +157,84 @@
         ]
     },
     {
+        "id": 9,
+        "name": "Vault App",
+        "date": "OCT 2020",
+        "tag_line": "A private photo/video Vault iOS App",
+        "tag_img": "/work_images/work9_2.png",
+        "tags": [2, 6, 7, 12],
+        "summary": "Vault App is a private photo/video iOS App that allows users to create protected albums with multiple privacy features.",
+        "details": [
+            {
+                "id": "div_2",
+                "div_type": "text", 
+                "div_title": "Features of the App",
+                "div_items": "1. Registration and Log In of User with Master Password \n 2. Decoy password implementation with encryption \n 3. Password protected albums (create albums with or without pins) \n 4. Albums pin codes are encrypted \n 5. View date of creation of albums \n 6. Import photos from photo gallery and camera \n 7. View photos, delete photos and view ‘date added’ of photos"
+            },
+            {
+                "id": "div_11",
+                "div_type": "hyperlink", 
+                "div_title": "Checkout the code-repo on Github",
+                "div_symbol": "/work_images/github.png",
+                "div_link": "https://github.com/nashitag/VaultApp"
+            },
+            {
+                "id": "div_1",
+                "div_type": "image/jpg", 
+                "div_title": "",
+                "div_items": "/work_images/work9_1.png"
+            },
+            {
+                "id": "div_3",
+                "div_type": "text", 
+                "div_title": "User Authentication",
+                "div_items": "\u2022 User log in and registration implemented with Firebase Authentication \n\u2022 Handles all cases of user log in (existing user, new user, wrong password, decoy log in attempt etc.)"
+            },
+            {
+                "id": "div_4",
+                "div_type": "image/jpg", 
+                "div_title": "User Login/Registration",
+                "div_items": "/work_images/work9_3.png"
+            },
+            {
+                "id": "div_5",
+                "div_type": "text", 
+                "div_title": "Create Protected Albums",
+                "div_items": "\u2022 Albums can be created with or without PIN CODES \n\u2022 Pin codes are encrypted and stored in Firebase. \n\u2022 Encryption and decryption is written with the help of RNCryptor library. \n\u2022 Encryption Key is stored safely using cocoapods-keys where Key names are stored in ~/.cocoapods/keys/ and key values in the OS X keychain."
+            },
+            {
+                "id": "div_6",
+                "div_type": "image/jpg", 
+                "div_title": "Protected Albums",
+                "div_items": "/work_images/work9_4.png"
+            },
+            {
+                "id": "div_7",
+                "div_type": "text", 
+                "div_title": "Photos",
+                "div_items": "\u2022 Import photos from photo gallery or from private camera. \n\u2022 Photos from the camera are not saved in iPhone photo library. Instead are stored directly in Firebase Storage database. \n\u2022 View photos in a collection view or in a detail photo viewer. \n\u2022 Deletion of photos possible"
+            },
+            {
+                "id": "div_8",
+                "div_type": "image/jpg", 
+                "div_title": "Photos",
+                "div_items": "/work_images/work9_5.png"
+            },
+            {
+                "id": "div_9",
+                "div_type": "text", 
+                "div_title": "Decoy Password",
+                "div_items": "\u2022 Set up Decoy Password and sign out in user profile page. \n\u2022 Decoy password can be set up easily. \n\u2022 The decoy password is encrypted and stored in Firebase Realtime Database. \n\u2022 When logging in, if user enters decoy password, he will be taken to decoy gallery. \n\u2022 Detailed functionality of decoy gallery will be implemented soon."
+            },
+            {
+                "id": "div_10",
+                "div_type": "image/jpg", 
+                "div_title": "Decoy Password",
+                "div_items": "/work_images/work9_6.png"
+            }
+        ]
+    },
+    {
         "id": 5,
         "name": "Project OMAR - Capstone",
         "date": "JAN-JUN 2020",
