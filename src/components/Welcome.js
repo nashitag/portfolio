@@ -60,7 +60,7 @@ function Welcome() {
                     </div>
                   <div className="welcome-text-main">
                     <Fade bottom duration={2000}>
-                      <h1 className="heading_caption1">DEVELOPER, SOFTWARE ENGINEER</h1>
+                      <h1 className="heading_caption1">DEVELOPER, DESIGNER, EXPLORER</h1>
                       <h1 className="heading1">Nashita Abd</h1>
                       <h1 className="heading_caption2">Dubai | Singapore</h1>
                     </Fade>
