@@ -302,6 +302,72 @@
         ]
     },
     {
+        "id": 10,
+        "name": "Hyper-personalization App",
+        "date": "MAY-JUL 2019",
+        "tag_line": "Enabling seamless personalization and dynamic advertisements",
+        "tag_img": "/work_images/work10_5.png",
+        "tags": [],
+        "summary": "A Hyper-personalization App made with IBM WatsonML. Designed and created the end-to-end data science demo using ICPD(IBM Cloud Pak for Data)",
+        "details": [
+            {
+                "id": "div_1",
+                "div_type": "text", 
+                "div_title": "Hyper-personalization with ICPD end-to-end demo",
+                "div_items": "\u2022 Utilized R language, PySpark and TensorFlow to create and train ML and DL models that can analyse customer reviews using NLP and understand customer behaviour. \u2022 Deploy the trained models using Watson ML and use this information to generate dynamic ads that cater to customer traits and behaviour. \u2022 Solution demo was on Pixiedust Apps and Angular Apps."
+            },
+            {
+                "id": "div_2",
+                "div_type": "hyperlink", 
+                "div_title": "Checkout the code-repo on Github",
+                "div_symbol": "/work_images/github.png",
+                "div_link": "https://github.com/nashitag/WatsonML-Angular-App"
+            },
+            {
+                "id": "div_3",
+                "div_type": "image/jpg", 
+                "div_title": "Solution Architecture",
+                "div_items": "/work_images/work10_1.png"
+            },
+            {
+                "id": "div_4",
+                "div_type": "iframe/video", 
+                "div_items": "https://drive.google.com/file/d/1UXhJvAEEu7fF_XNvtIj_tJK06KRekXpD/preview" 
+            },
+            {
+                "id": "div_5",
+                "div_type": "text", 
+                "div_title": "Personalization vs Hyper-personalization",
+                "div_items": "Personalization is the incorporation of personal and transactional information like name, title, organization, purchase history etc. to your communication. Hyper-personalization goes one step further and utilizes behavioral and real-time data to create highly contextual communication that is relevant to the user. Hyper-personalization can help your brand stand out and increase engagement and conversions with your target audience."
+            },
+            {
+                "id": "div_6",
+                "div_type": "text", 
+                "div_title": "Data Science Forum",
+                "div_items": "\u2022 Strategized, organized and executed a Data Science Forum at IBM on 11th July 2019. \n\u2022 Networked with over 300 industry professionals from the Data Science Industry across Singapore, inviting 40 of them to the forum, with 4 guest speakers. \n\u2022 Presented the data science demo at the Forum: “Enabling seamless personalization and dynamic advertisements” \n\u2022 Generated 4 customer opportunities for ICPD worth $1m."
+            },
+            {
+                "id": "div_7",
+                "div_type": "image/jpg", 
+                "div_title": "Data Science Forum",
+                "div_items": "/work_images/work10_2.png"
+            },
+            {
+                "id": "div_8",
+                "div_type": "image/jpg", 
+                "div_title": "Data Science Forum Use Case Demo",
+                "div_items": "/work_images/work10_3.png"
+            },
+            {
+                "id": "div_9",
+                "div_type": "image/jpg", 
+                "div_title": "Data Science Forum Use Case Demo",
+                "div_items": "/work_images/work10_4.png"
+            }
+            
+        ]
+    },
+    {
         "id": 7,
         "name": "Dashboard App",
         "date": "MAY 2019",

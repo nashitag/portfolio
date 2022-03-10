@@ -45,15 +45,16 @@
     position: relative;
     height:37vh;
     width:37vh;
-    border: 1px solid rgb(155, 154, 154);
-    margin: 1px;
+    outline: 1px solid rgb(155, 154, 154);
+    /* outline-offset:1px;     */
+    margin: 3px;
     
 }
 .projectImage{
     position: relative;
     z-index: 1;
-    height:36.5vh;
-    width:36.5vh;
+    height:37vh;
+    width:37vh;
     object-fit:cover;
     transition: 300ms ease-in; 
 }
