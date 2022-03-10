@@ -55,6 +55,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    /* background-color: #7b8a6a; */
 }
 .bckBottom {
     height: 100vh;
@@ -165,30 +166,22 @@
         background-size: cover;
         background-attachment: fixed;
         background-position: bottom;
-        /* margin:5vw */
-    }
-    .bckBottom {
-        /* height: 100vh; */
-        /* display: flex; */
-        background-image: url('../assets/texture5.jpg');
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: bottom;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-    
-    .bck2 {
+
         height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        /* background-image: url('../assets/bck_mobile_sg.png'); */
-        background-size: 100% 100vh;
-        background-position: bottom;
-        background-attachment: initial;
+        /* margin:5vw */
     }
-
+    .bckBottom {
+        /* height: 100vh; */
+        background-image: url('../assets/texture5.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: bottom;
+        overflow-y: scroll;
+    }
+    
     .goDown {
         margin-bottom: 15vh;
     }
@@ -204,7 +197,7 @@
         flex-direction: column-reverse;
         display: flex;
         margin: 8vw;
-        padding: 8vw;
+        padding: 4vw;
         padding-bottom: 0;
         margin-bottom: 0;
         align-items: center;
@@ -217,13 +210,26 @@
     }
 
     .contact_me_form {
+        margin-top: 3vh;
         width: max-content;
         display:flex;
         flex-direction:column;
         width: 70vw; 
-        padding: 2vh;
-        padding-bottom: 15vh;
+        padding: 0vh;
+        padding-bottom: 10vh;
         align-self: center
     }
-    
+    .heading_caption1 {
+        font-family: "Helvetica";
+        font-weight: 300;
+        font-size: 3vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    .heading1 {
+        /* font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue";  */
+        font-family: 'Marleigh';
+        /* font-weight: 300; */
+        font-size: 4rem;
+    }
  }
