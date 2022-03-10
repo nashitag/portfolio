@@ -1,3 +1,4 @@
+import React, { useRef } from 'react';
 import './Welcome.css';
 import nashita from '../assets/Nashita.png';
 import { goToAnchor } from 'react-scrollable-anchor'
@@ -12,7 +13,7 @@ import { useState, useEffect } from 'react';
 import Navbarr from './NavBarr';
 import { SocialIcon } from 'react-social-icons';
 import useMediaQuery from '@mui/material/useMediaQuery';
-
+import emailjs from '@emailjs/browser';
   // configureAnchors({offset: -100})
 
 function Welcome() {
@@ -83,7 +84,7 @@ function Welcome() {
               </ScrollableAnchor>
 
               <ScrollableAnchor id={'learnmore'}>
-                <div className="bck1">
+                <div className="bckBottom">
                   <div className="div_about_me">
                     <div className="div_about_text">
                       <h2 className="about_text_title">Hey there, I am Nashita.</h2>
@@ -94,9 +95,9 @@ function Welcome() {
                     </div>
                   </div>
 
-                  <div className="div_my_work">
+                  <div className="contact_me">
                     {/* <h2 className="about_text_title">My Work</h2> */}
-
+                    <ContactUs/>
                   </div>
                 </div>
               </ScrollableAnchor>
@@ -105,4 +106,54 @@ function Welcome() {
 }
 
 export default Welcome;
+
+
+export const ContactUs = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    console.log(e, e.target.user_name.value, e.target.user_email.value, e.target.message.value)
+    // emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
+    //   .then((result) => {
+    //       console.log(result.text);
+    //   }, (error) => {
+    //       console.log(error.text);
+    //   });
+
+      emailjs.send("service_t5dx8wb","template_xvcdgmt",{
+        from_name: e.target.user_name.value,
+        to_name: "Nashita",
+        message: e.target.message.value,
+        reply_to: e.target.user_email.value,
+        }, 'Jnks9zPx1-sjhAwj_')
+        .then((result) => {
+          console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+  };
+
+  
+
+  return (
+    <form ref={form} onSubmit={sendEmail} className='contact_me_form'>
+      
+      <label className="contact_me_text">Feel free to drop me a note here!</label>
+      <textarea required name="message" placeholder='Your Message' className='form_input'/>
+
+      {/* <label className="contact_me_text">Leave your contact details</label> */}
+      <div style={{display:'flex', flexDirection:'row', justifyContent:'space-between', marginBottom:'10px', marginTop:'10px'}}>
+        <input required type="text" name="user_name" placeholder='Name' style={{width:'49.5%'}}/>
+        <input type="email" name="user_email" placeholder='Email' style={{width:'49.5%'}} />
+      </div>
+
+      <input type="submit" value="Send" className='form_submit_button'/>
+    </form>
+  );
+};
+
+
+
 
