@@ -1,5 +1,5 @@
 .background {
-    background-image: url('../assets/design1_1.png');
+    background-image: url('../assets/design1_1.webp');
     background-size: cover; 
     background-repeat: no-repeat;
     /* height: 100vh; */
@@ -33,6 +33,7 @@
     font-family: 'Marleigh';
     /* font-weight: 300; */
     font-size: 6rem;
+    font-display: swap;
 }
 .heading_caption1 {
     font-family: "Helvetica";
@@ -116,6 +117,7 @@
 .about_text_title {
     font-family: 'Marleigh';
     font-size: 5vh;
+    font-display: swap;
 }
 .about_text_para {
     font-family: "Helvetica";
@@ -162,7 +164,7 @@
 
 
     .bck1 {
-        background-image: url('../assets/texture5.jpg');
+        background-image: url('../assets/texture5.webp');
         background-size: cover;
         background-attachment: fixed;
         background-position: bottom;
@@ -175,7 +177,7 @@
     }
     .bckBottom {
         /* height: 100vh; */
-        background-image: url('../assets/texture5.jpg');
+        background-image: url('../assets/texture5.webp');
         background-size: cover;
         background-attachment: fixed;
         background-position: bottom;
@@ -231,5 +233,6 @@
         font-family: 'Marleigh';
         /* font-weight: 300; */
         font-size: 4rem;
+        font-display: swap;
     }
  }

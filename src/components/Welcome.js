@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import './Welcome.css';
-import nashita from '../assets/Nashita.png';
+import nashita from '../assets/Nashita.webp';
 import { goToAnchor } from 'react-scrollable-anchor'
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor';

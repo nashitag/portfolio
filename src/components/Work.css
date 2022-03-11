@@ -1,5 +1,5 @@
 .background {
-    background-image: url('../assets/design1_1.png');
+    background-image: url('../assets/design1_1.webp');
     background-size: cover; 
     background-repeat: no-repeat;
     width: 100wh;
@@ -9,7 +9,7 @@
     /* scroll-padding-bottom: 5vh; */
 }
 .backgroundWorkDetail {
-    background-image: url('../assets/texture5.jpg');
+    background-image: url('../assets/texture5.webp');
     background-size: cover; 
     /* background-repeat: no-repeat; */
     height: 100vh;
@@ -184,7 +184,7 @@
 
 @media only screen and (max-width: 500px){
     .background {
-        background-image: url('../assets/texture5.jpg');
+        background-image: url('../assets/texture5.webp');
         background-size: cover; 
         background-repeat: no-repeat;
         height: 100%;
