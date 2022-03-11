@@ -14,6 +14,7 @@ import Navbarr from './NavBarr';
 import { SocialIcon } from 'react-social-icons';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import emailjs from '@emailjs/browser';
+import { useAlert } from 'react-alert'
   // configureAnchors({offset: -100})
 
 function Welcome() {
@@ -21,7 +22,7 @@ function Welcome() {
   const [counter, setCounter] = useState(0)
   const matches = useMediaQuery('(min-width:600px)');
 
-
+  
 
   async function goToProjects() {
     console.log("test")
@@ -111,16 +112,14 @@ export default Welcome;
 export const ContactUs = () => {
   const form = useRef();
 
+  const alert = useAlert()
+
+  
+
   const sendEmail = (e) => {
     e.preventDefault();
 
     console.log(e, e.target.user_name.value, e.target.user_email.value, e.target.message.value)
-    // emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
-    //   .then((result) => {
-    //       console.log(result.text);
-    //   }, (error) => {
-    //       console.log(error.text);
-    //   });
 
       emailjs.send("service_t5dx8wb","template_xvcdgmt",{
         from_name: e.target.user_name.value,
@@ -130,15 +129,18 @@ export const ContactUs = () => {
         }, 'Jnks9zPx1-sjhAwj_')
         .then((result) => {
           console.log(result.text);
+          alert.show("Your details have been submitted.", {type: 'success'})
+          document.getElementById("create-form").reset();
         }, (error) => {
             console.log(error.text);
+            alert.show(error.text, {type: 'error'})
         });
   };
 
   
 
   return (
-    <form ref={form} onSubmit={sendEmail} className='contact_me_form'>
+    <form id="create-form" ref={form} onSubmit={sendEmail} className='contact_me_form'>
       
       <label className="contact_me_text">Feel free to drop me a note here!</label>
       <textarea required name="message" placeholder='Your Message' className='form_input'/>
