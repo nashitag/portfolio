@@ -95,7 +95,7 @@ function WorkDetail() {
                   : null } 
               {divDetails.div_type=="iframe/video" ? 
                 <>
-                  <iframe src={divDetails.div_items} width="100%" height="400" allow="autoplay"></iframe>
+                  <iframe loading="lazy" src={divDetails.div_items} width="100%" height="400" allow="autoplay"></iframe>
                 </>
                   : null }     
             </div>
