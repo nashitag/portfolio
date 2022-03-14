@@ -89,7 +89,7 @@ function Welcome() {
                   <div className="div_about_me">
                     <div className="div_about_text">
                       <h2 className="about_text_title">Hey there, I am Nashita.</h2>
-                      <p className="about_text_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit faucibus mollis. Praesent ultrices vehicula hendrerit. Maecenas ut ante ut magna viverra consequat. Sed pretium viverra quam non blandit. Nullam bibendum odio non posuere venenatis. Aliquam a quam non velit pharetra convallis. Duis lorem libero, vehicula fermentum elementum vel, finibus at purus. </p>
+                      <p className="about_text_para">An honest, hardworking professional interested in continuous learning to enhance my software skills. Having been a part of technical project teams delivering projects related to data science and IoT, has always proven to be a dedicated and strong team player. Has taken up many leadership positions in university undertakings and strongly believes in the power of collaboration for success. At projects with Visa, IBM and Accenture, has been able to present technical skills in a confident and articulate manner. Aims to keep learning and leverage knowledge, experience, strong analytical and communication skills to contribute to the software industry.</p>
                     </div>
                     <div className="div_about_image">
                       <img src={nashita} className="about_image" id="sign"></img>
