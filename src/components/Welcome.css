@@ -127,6 +127,12 @@
     height: 30vh;
     width: 30vh
 }
+.about_me_link_to_work {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+
+}
 .contact_me{
     display: flex;
     flex-direction: column;

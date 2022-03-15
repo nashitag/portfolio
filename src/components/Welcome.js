@@ -6,6 +6,7 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor';
 import Fade from 'react-reveal/Fade';
 import Jump from 'react-reveal/Jump';
+import Pulse from 'react-reveal/Pulse';
 import arrowDown from '../assets/arrowDown.png';
 import sign from '../assets/sign.jpg';
 import Rotate from 'react-reveal/Rotate';
@@ -88,8 +89,16 @@ function Welcome() {
                 <div className="bckBottom">
                   <div className="div_about_me">
                     <div className="div_about_text">
-                      <h2 className="about_text_title">Hey there, I am Nashita.</h2>
-                      <p className="about_text_para">An honest, hardworking professional interested in continuous learning to enhance my software skills. Having been a part of technical project teams delivering projects related to data science and IoT, has always proven to be a dedicated and strong team player. Has taken up many leadership positions in university undertakings and strongly believes in the power of collaboration for success. At projects with Visa, IBM and Accenture, has been able to present technical skills in a confident and articulate manner. Aims to keep learning and leverage knowledge, experience, strong analytical and communication skills to contribute to the software industry.</p>
+                      <h2 className="about_text_title">Hey there, I am Nashita,</h2>
+                      <p className="about_text_para" style={{marginBottom:'0'}}>&nbsp; &nbsp; &nbsp; a product developer based in Singapore. I particularly love designing web and mobile solutions. I enjoy building creative and dynamic digital experiences. I am presently working at Visa Inc. 
+                          
+                            I have specialized in Data Analytics and Machine Learning, and I am currently focused on integrating the same to develop effective solutions for day-to-day challenges in the software/real world.
+                          <br/> <br/>
+                            I am proficient in Java, Python & JavaScript. Checkout my work related to Data Science, Machine Learning, Product Design and Development</p>
+                            <Pulse forever={true}><div className='about_me_link_to_work'><a href="/work">My Work</a></div></Pulse>
+                          
+                          <p className="about_text_para">  I am committed to working hard towards my passion of designing digital experiences that will leave a dent in the world. </p>
+                            
                     </div>
                     <div className="div_about_image">
                       <img src={nashita} className="about_image" id="sign"></img>
