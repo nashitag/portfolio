@@ -23,6 +23,7 @@ function Navbarr() {
                     {/* <Nav.Link href="/education" style={{backgroundColor:matches?'transparent':'#f4f4f4'}}>Education & Certifications</Nav.Link> */}
                     {/* <Nav.Link href="/experience">Experiec</Nav.Link> */}
                     <Nav.Link href="/awards" style={{backgroundColor:matches?'transparent':'#f4f4f4'}}>Awards & Achievements</Nav.Link>
+                    <Nav.Link href="resume-2022-v2.pdf" download style={{backgroundColor:matches?'transparent':'#f4f4f4'}}>Resume</Nav.Link>
                     {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
