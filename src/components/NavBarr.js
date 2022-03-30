@@ -20,9 +20,9 @@ function Navbarr() {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto" >
                     <Nav.Link href="/work"  style={{backgroundColor:matches?'transparent':'#f4f4f4'}}>Work</Nav.Link>
-                    <Nav.Link href="/education" style={{backgroundColor:matches?'transparent':'#f4f4f4'}}>Education & Certifications</Nav.Link>
+                    {/* <Nav.Link href="/education" style={{backgroundColor:matches?'transparent':'#f4f4f4'}}>Education & Certifications</Nav.Link> */}
                     {/* <Nav.Link href="/experience">Experiec</Nav.Link> */}
-                    <Nav.Link href="/awards" style={{backgroundColor:matches?'transparent':'#f4f4f4'}}>Awards</Nav.Link>
+                    <Nav.Link href="/awards" style={{backgroundColor:matches?'transparent':'#f4f4f4'}}>Awards & Achievements</Nav.Link>
                     {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>

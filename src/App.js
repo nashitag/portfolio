@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Welcome from './components/Welcome.js';
 import Work from './components/Work.js';
+import Awards from './components/Awards.js';
 import WorkDetail from './components/WorkDetail.js';
 import { MuiThemeProvider, createTheme } from '@material-ui/core/styles';
 import { transitions, positions, Provider as AlertProvider } from 'react-alert'
@@ -42,6 +43,7 @@ function App() {
               <Route exact path="/" component={() => <Welcome/>} />
               <Route exact path="/work" component={() => <Work/>} />
               <Route exact path="/work/:id" component={() => <WorkDetail/>} />
+              <Route exact path="/awards" component={() => <Awards/>} />
             </Switch>
           </BrowserRouter>
         </div>

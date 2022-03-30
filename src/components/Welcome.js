@@ -94,10 +94,10 @@ function Welcome() {
                           
                             I have specialized in Data Analytics and Machine Learning, and I am currently focused on integrating the same to develop effective solutions for day-to-day challenges in the software/real world.
                           <br/> <br/>
-                            I am proficient in Java, Python & JavaScript. Checkout my work related to Data Science, Machine Learning, Product Design and Development</p>
+                            I am proficient in Java, Python & JavaScript. Check out my work related to Data Science, Machine Learning, Product Design, and Development</p>
                             <Pulse forever={true}><div className='about_me_link_to_work'><a href="/work">My Work</a></div></Pulse>
                           
-                          <p className="about_text_para">  I am committed to working hard towards my passion of designing digital experiences that will leave a dent in the world. </p>
+                          <p className="about_text_para">  I am committed to working hard towards my passion for designing digital experiences that will leave a dent in the world.</p>
                             
                     </div>
                     <div className="div_about_image">
