@@ -1,27 +1,26 @@
-import React,{useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react'
 // import './Welcome.css';
-import Navbarr from './NavBarr';
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-import { useLocation, Link } from "react-router-dom";
-import './Awards.css';
-import {Modal, Button} from 'react-bootstrap';
-import MultipleSelectChips from './MultipleSelectChips';
-import gtag from 'ga-gtag';
+import Navbarr from './NavBarr'
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
+import 'react-vertical-timeline-component/style.min.css'
+import { useLocation, Link } from 'react-router-dom'
+import './Awards.css'
+import { Modal, Button } from 'react-bootstrap'
+import MultipleSelectChips from './MultipleSelectChips'
+import gtag from 'ga-gtag'
 
-function Awards() {
+function Awards () {
+  const [show, setShow] = useState(false)
 
-    const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false)
 
-    const handleClose = () => setShow(false);
-
-    function elementClicked(e){
-        console.log(e.target)
-        setShow(!show);
-    }
-    return (
+  function elementClicked (e) {
+    console.log(e.target)
+    setShow(!show)
+  }
+  return (
         <div className='background' >
-          <Navbarr/> 
+          <Navbarr/>
           <div className="awards">
           <VerticalTimeline lineColor="grey" >
                 <VerticalTimelineElement
@@ -34,7 +33,7 @@ function Awards() {
                 >
                     <h4 className="vertical-timeline-element-subtitle">CEOx1Day (CEO for a Day)</h4>
                     <h6 className="vertical-timeline-element-text">
-                     <a href="https://www.odgersberndtson.com/en-sg/ceox1day/news-and-media/13-university-students-selected-for-ceox1day-2019-2020">1 of 13 finalists as Singapore’s most promising future leaders for year 2020.</a> CEOx1Day (CEO for a Day) matches students with top CEOs in Singapore, providing them with the opportunity to walk in the shoes of a CEO for a full day. 
+                     <a href="https://www.odgersberndtson.com/en-sg/ceox1day/news-and-media/13-university-students-selected-for-ceox1day-2019-2020">1 of 13 finalists as Singapore’s most promising future leaders for year 2020.</a> CEOx1Day (CEO for a Day) matches students with top CEOs in Singapore, providing them with the opportunity to walk in the shoes of a CEO for a full day.
                     </h6>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -107,14 +106,13 @@ function Awards() {
                 <Modal.Header closeButton>
                 <Modal.Title>Modal heading</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
                 <Modal.Footer>
-                
-                
+
                 </Modal.Footer>
             </Modal>
           </div>
         </div>
-    );
+  )
 }
-export default Awards;
+export default Awards

@@ -1,15 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import logo from './logo.svg'
+import './App.css'
 import {
   BrowserRouter,
   Switch,
-  Route,
-} from "react-router-dom";
-import Welcome from './components/Welcome.js';
-import Work from './components/Work.js';
-import Awards from './components/Awards.js';
-import WorkDetail from './components/WorkDetail.js';
-import { MuiThemeProvider, createTheme } from '@material-ui/core/styles';
+  Route
+} from 'react-router-dom'
+import Welcome from './components/Welcome.js'
+import Work from './components/Work.js'
+import Awards from './components/Awards.js'
+import WorkDetail from './components/WorkDetail.js'
+import { MuiThemeProvider, createTheme } from '@material-ui/core/styles'
 import { transitions, positions, Provider as AlertProvider } from 'react-alert'
 import AlertTemplate from 'react-alert-template-basic'
 
@@ -19,7 +20,7 @@ const theme = createTheme({
       main: '#3B3B3B'
     }
   }
-});
+})
 
 // optional configuration
 const options = {
@@ -31,9 +32,7 @@ const options = {
   transition: transitions.SCALE
 }
 
-
-
-function App() {
+function App () {
   return (
     <AlertProvider template={AlertTemplate} {...options} >
       <MuiThemeProvider theme={theme}>
@@ -49,7 +48,7 @@ function App() {
         </div>
       </MuiThemeProvider>
     </AlertProvider>
-  );
+  )
 }
 
-export default App;
+export default App
